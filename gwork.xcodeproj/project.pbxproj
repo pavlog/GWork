@@ -1,0 +1,2591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		421B4340F73B4475BC707200 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 07C3A43461BC4B6783AB9C07 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				53537388044445119A7C3673 /* CMake Rules */,
+			);
+			dependencies = (
+				1FF7148A3FEC45E78444405A /* PBXTargetDependency */,
+				4CF4F8CCA0AF4A2BA17CEE5B /* PBXTargetDependency */,
+				CC1AC8612AFB42B4ACAA96F3 /* PBXTargetDependency */,
+				47CA37CD94884D37A100CC1E /* PBXTargetDependency */,
+				24EBAC9E68C447F78EC5FADA /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		C121C0C0E14544A0BD6954AC /* doc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 066CDB83AB674A27ADA776F1 /* Build configuration list for PBXAggregateTarget "doc" */;
+			buildPhases = (
+				AE43A9533B734309BEE2048C /* CMake Rules */,
+			);
+			dependencies = (
+				240EFAD559BB48C3A899ACC6 /* PBXTargetDependency */,
+			);
+			name = doc;
+			productName = doc;
+		};
+		D68034B83BAF410B86D50B21 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 254F76ED8844441C8C134215 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				E6AE780C0B9A4434ADDD25FF /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		DCE1FDA104FD4BAAB76AA7D5 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4B79D261AA494431B42476AB /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				63813D93E2DB4F0C9DDB67D1 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				5BC634AEF68C4406AD9A1C45 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00399774CD494EBB8790F6CE /* Properties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A434AFB24FD48A19A29A6C2 /* Properties.cpp */; };
+		056AC4B23C914E9FB0C5CD0F /* ColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6377DDF059437ABED9767F /* ColorPicker.cpp */; };
+		084C8F263BD84639B6AE5682 /* DockBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1724C87771764B1598C9E1C6 /* DockBase.cpp */; };
+		097B4125165E4D779588BCA4 /* ListBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB15ECCE25C24474AB55ABB4 /* ListBox.cpp */; };
+		0980EE860F254EFC85C82D41 /* FolderOpen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD57BB28F1FD4DF2AC42AE45 /* FolderOpen.cpp */; };
+		0C36C4A00C6F4F7D9EEFC4F3 /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBB0FB136EE44BF1A59A02E7 /* Label.cpp */; };
+		0E063EC867E14B8483ED306B /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BCD4E4F1DD94E0F89FE800D /* OpenSans.ttf */; };
+		109BC049563542E8985B0C55 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B824B834591142BD970A6723 /* Window.cpp */; };
+		1132BEB8F90B47A7AF3D5EE7 /* FileOpen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94E4B5E42960425DB5F74C0B /* FileOpen.cpp */; };
+		150639837825429F86D1A707 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA4B2B9944A7288F61ADE /* Menu.cpp */; };
+		1628BACFFE3A45F597363DA1 /* TabControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F6439C4A04D4B1ABB11E141 /* TabControl.cpp */; };
+		17F93033EF4D447F9DD6D372 /* CrossSplitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3857CFDB6624632BD7E3B3B /* CrossSplitter.cpp */; };
+		1B26F76E78074B67B08873F4 /* test16.png in Resources */ = {isa = PBXBuildFile; fileRef = 17043211EE1E4BA19E824712 /* test16.png */; };
+		1D200DE600D74AF89323537F /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEB36C1F2E6B4E4AAF008644 /* Rectangle.cpp */; };
+		201D5E070FA3465DB4199659 /* ComboBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B99EE27D1D6946FD838EDF67 /* ComboBox.cpp */; };
+		2066FA1C7681420AB385A79D /* WindowCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9E90AA9895E46EC9432EA12 /* WindowCanvas.cpp */; };
+		20C8D3F2AC564DDFADC3C068 /* PageControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8F1DBFEF548EDBD756BE9 /* PageControl.cpp */; };
+		20FADE90BAE54DB39F87147B /* BaseRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8C7663C474CA294CF2519 /* BaseRender.cpp */; };
+		244BE5AB6A954BBFB912AFBA /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24F51867D81942DCBE99F457 /* Button.cpp */; };
+		2597BF4E57D24F6A9EAF3E6F /* RadioButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA796173764AB18D43F018 /* RadioButton.cpp */; };
+		28C91CFE6E044C73A8BCA599 /* TreeControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 258CB0EA692647AB85C9CF3F /* TreeControl.cpp */; };
+		2926115CD4554BC6B0C3B28B /* ResizableControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA47F3F146E445BBB0AEA59E /* ResizableControl.cpp */; };
+		2B2FE7137FF9426588468482 /* VerticalScrollBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BC37B08C88045EE86106D58 /* VerticalScrollBar.cpp */; };
+		2D1983DC174A4CB5B1F5FE48 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D272BDF3D1BF4F24971EBE79 /* logo.png */; };
+		2E029F02C92B4B94B140C299 /* DefaultSkin.png in Resources */ = {isa = PBXBuildFile; fileRef = C87884493F674B00B96E2BAD /* DefaultSkin.png */; };
+		2E38E6797E1B49AD93922677 /* Properties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C95CDE7DCAF434099A05812 /* Properties.cpp */; };
+		31611FE3E04D4BC5B696342E /* Slider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03DB86645215427FA1C677F2 /* Slider.cpp */; };
+		379A069E3B3247B7891AB0CB /* PropertyTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70B8F6DC350841D487007BC4 /* PropertyTree.cpp */; };
+		37F1F088E5714F099466F196 /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB88C90523B943FFA5C916DF /* Label.cpp */; };
+		3865A91994924CB5AD6B3C20 /* ImagePanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48E6839EBA1F4893AC9724C8 /* ImagePanel.cpp */; };
+		395D72D224054EBF9688FF05 /* CrossSplitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845BAAA2CA42447A9E98BB17 /* CrossSplitter.cpp */; };
+		39BAD6B08D78473CA0895246 /* RadioButtonController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F46AB54A07964A4FB10EF831 /* RadioButtonController.cpp */; };
+		3BE9251668C04252A04D63CB /* NumericUpDown.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E85E06F940D8405C93E6EA58 /* NumericUpDown.cpp */; };
+		4172868D68DC4F6DB38ACFF3 /* SplitterBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19DC3266C044D65A2D550BC /* SplitterBar.cpp */; };
+		4418D155631C4487A8F1EFF6 /* ScrollControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90F20537C81F4BFBA3807B2E /* ScrollControl.cpp */; };
+		471795EF09FD4A39AFB73936 /* ColorControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C9401A0B3EC42739E6D7549 /* ColorControls.cpp */; };
+		479AAF743B0C49288DEBDC36 /* ListBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8642CDD56194E4E8D0A49CC /* ListBox.cpp */; };
+		4A15D68548E94ED89F9D951B /* WindowControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD77E813594839A5C248C1 /* WindowControl.cpp */; };
+		56716027D7FC4380A1957199 /* Gwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2031BB9285344EA78933468B /* Gwork.cpp */; };
+		56B16D6C4E394EB697B874CC /* ScrollBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0645B971383B4E559910EB8A /* ScrollBar.cpp */; };
+		5804EE378B634502ACD1F163 /* TreeControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5E76477BF09437293CC7F98 /* TreeControl.cpp */; };
+		58287BEA82E44A59AE307044 /* PlatformCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B04515559D3441C398FD9CBC /* PlatformCommon.cpp */; };
+		590D80524FC04061BC84DA7D /* ScrollBarBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0CF289CB68E4AF0B9581BFA /* ScrollBarBar.cpp */; };
+		5C7438CDDACD45D29887919F /* FileSave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39A4C5140062490E8ACED3CE /* FileSave.cpp */; };
+		636A18E6F1324E269DCFAF2D /* RadioButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2BD769ECB1C4F32A81E3998 /* RadioButton.cpp */; };
+		65920EA993D24ECFA368BA32 /* ComboBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0A2B5D019E44E8833F9F9F /* ComboBox.cpp */; };
+		6677D3186D184062BD1117ED /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E38C0F2157540DB9883F630 /* Utility.cpp */; };
+		6CE52DE40ABE4542BEEBB523 /* TextBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BE63F316279487C9CECD5AD /* TextBox.cpp */; };
+		7087E25435F142E8B263BE22 /* StatusBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C7347121AB4D2E80A3AEFB /* StatusBar.cpp */; };
+		759435B1AD2C4EEA9CC61F4B /* ToolTip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA803969339747B78AD8E29D /* ToolTip.cpp */; };
+		82FC5E0ED86B44DB9A22FA20 /* ProgressBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24577A4802BF45E28509E64F /* ProgressBar.cpp */; };
+		838BDBBC676642B98975846F /* HorizontalScrollBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0290F251A46F44D3979894E4 /* HorizontalScrollBar.cpp */; };
+		846CFC206D3247D1A798B464 /* HSVColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21E16484560C424188EA7C1F /* HSVColorPicker.cpp */; };
+		8F03C51D74A64B2892CFE9BB /* SDL2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93A7233CFBD84597BA59586E /* SDL2.cpp */; };
+		9096138C7F8E4C98BCE456F7 /* MenuStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8611B42951A4E9AA468DB03 /* MenuStrip.cpp */; };
+		9334246BCEE3430E9DC0FD42 /* TabButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED72FE1E657E48F8A274FA84 /* TabButton.cpp */; };
+		94DDCC10C7A24346B27E7968 /* Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81E674A076B54AF98B146DD2 /* Base.cpp */; };
+		9826DC3FF1D84CB7BCC63DFC /* TextBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9AF9DDE44F842148BD6D67F /* TextBox.cpp */; };
+		9A1210B997714D938D39B36D /* LabelMultiline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED0240A8A10E4A27BA523E8F /* LabelMultiline.cpp */; };
+		9B59A48609CC41A88F27D5EC /* ColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FE7A15E9A6A4D9A844A410F /* ColorPicker.cpp */; };
+		9B9F675516574A7E885F0C31 /* ProgressBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA42D1A29EA45AC9D414C5C /* ProgressBar.cpp */; };
+		9BD3E4E4BCA2474B866E2927 /* ControlList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB7A94FB4F4613AC66052E /* ControlList.cpp */; };
+		A14A56349F0A41C1A04D7CF0 /* CheckBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95FE55EA955D466AB40DD2D5 /* CheckBox.cpp */; };
+		A47349C363F044E085A51237 /* CollapsibleCategory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FD6661FEB0D47C8B53607F0 /* CollapsibleCategory.cpp */; };
+		AB7EFA11C6C44949B5EA7F15 /* ScrollBarButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 079C3213B03540FE83635954 /* ScrollBarButton.cpp */; };
+		B0106CD3BE4A438BA00867D2 /* Resizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3388956CFCC545478F5812FC /* Resizer.cpp */; };
+		B279B85103D044AA9C0B6496 /* Events.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD01D385CF7C42FB89D917C0 /* Events.cpp */; };
+		B2C86A24A44448F8990ED8BF /* PageControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E915CF8349DB4F419F81DF6A /* PageControl.cpp */; };
+		B4B99BE8F3134E2BA329B3EE /* Anim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72953F34E0CA4FD687430FD3 /* Anim.cpp */; };
+		B7AA8C3522208BD20034A094 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AA8C3422208BD20034A094 /* OpenGL.framework */; };
+		B7DEF1E4883744E190F91C47 /* ImagePanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 82FE87AFAE984AEDB3A62A21 /* ImagePanel.cpp */; };
+		BAAC33303CE64ACB8CA9E090 /* GroupBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 300BD25D435846AB87A8C413 /* GroupBox.cpp */; };
+		BB26B1382AB24471ADEF6CBE /* CollapsibleList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D930AD3F778148ED8A951DB2 /* CollapsibleList.cpp */; };
+		BD9206DB8CDF4A55AE9AE5D3 /* Hook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF746B196F1B4278ABA4D4AE /* Hook.cpp */; };
+		BDC7E286E22849C9975AF5B4 /* InputHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9C5313A97D9465084BD5523 /* InputHandler.cpp */; };
+		C1739B5AA72E440EAF05874A /* Text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C15D9645357459DAB669CC4 /* Text.cpp */; };
+		C1F241A9F34A4F80A948EB2F /* HorizontalSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D038F5A676F4B47BDB4D224 /* HorizontalSlider.cpp */; };
+		C2B5F716D6864EB4AF2FB7C9 /* TextBoxNumeric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F47C451DACD84631B777F6E1 /* TextBoxNumeric.cpp */; };
+		C5E685F8E99B43EE9B48F576 /* CrossPlatform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3001CD882B9A4F7582F77F1F /* CrossPlatform.cpp */; };
+		C8328592E4DF4A9DB9FDB99A /* Canvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9FB7FAA65F84DBEA40AB2B3 /* Canvas.cpp */; };
+		CC571AB6CB294FB394984EC9 /* Slider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10B484FF5E734AAD80DDD599 /* Slider.cpp */; };
+		D47BECFBFC7A4775BADA6EC9 /* TreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C724B3B04A34AD980F8C294 /* TreeNode.cpp */; };
+		D72F4DD33D28434DAC1ED777 /* Numeric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D89FD5060F24B079642E121 /* Numeric.cpp */; };
+		D76469F23313466D8C75C91E /* DockedTabControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 477EAA66D3534BF0807DB27C /* DockedTabControl.cpp */; };
+		DC3E86FF38954EB586ACA6D5 /* Skin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1EE62B47A4421BD41650C /* Skin.cpp */; };
+		E512787D69C745A08D115CBC /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1984FFFCE8674B32846A47DF /* Test.cpp */; };
+		E7670A8C5CDF4125917CB71B /* RichLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 761D7D9D50204C56B90BB643 /* RichLabel.cpp */; };
+		E7925E32D77740758D1DB510 /* DragAndDrop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16EE81F85B064F27B9BA5186 /* DragAndDrop.cpp */; };
+		E799A43885CE44E39BA8CEE4 /* MenuItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E84674756514E66B05B9988 /* MenuItem.cpp */; };
+		E7F5F6D1FFFE4C38B36F184F /* Query.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BB2824C5C8046BA86AD484F /* Query.cpp */; };
+		E95005F185E642D180CEC7AE /* Checkbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 711421C85A0148189830B2AE /* Checkbox.cpp */; };
+		E96010548EBD44A598C49C47 /* LabelClickable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F73A84F08FD4E7E9D0FC9E5 /* LabelClickable.cpp */; };
+		EA2B7B308F2C4ACF88790824 /* GroupBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD06EA541FF46B5A1E9B80B /* GroupBox.cpp */; };
+		ECA483CB6207429493D80723 /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69592D85249342C9B5BCE965 /* Button.cpp */; };
+		F05ED272DB0A478A90DFAB2F /* TabStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFC04DB38E4D42A480549871 /* TabStrip.cpp */; };
+		F2A99C606078438A899A7245 /* MenuStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 758DF8F2EAA7409C8D98BB3F /* MenuStrip.cpp */; };
+		F3551258B41647F79D80072F /* SDL2Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E70463E6A7E4D1CA43251C3 /* SDL2Sample.cpp */; };
+		F64408E045B34DAABA28D258 /* ScrollControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 983E5124882E42028C9A1DDB /* ScrollControl.cpp */; };
+		F72560462D084B08B9B82311 /* TestAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA4AB2BEED143C6A2246D8F /* TestAPI.cpp */; };
+		F8EE3340F86B40FB9AD2CBE2 /* TabControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7641D8B0ADA4C3CB2BD3D36 /* TabControl.cpp */; };
+		FCB120ED8EB74D8A9025BC1E /* VerticalSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EB61B011936410DA9F9E1A9 /* VerticalSlider.cpp */; };
+		FF437DC3406C41F3B3270825 /* Dragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BBA72E226AA4C01A1779DF1 /* Dragger.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05C69AB259184C0BBDD4366B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EFC717FF34B4AD59A4D4231;
+			remoteInfo = GworkSDL2;
+		};
+		06430BAA840143B1B01F8C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE61E9C065F40DEBE634B83;
+			remoteInfo = Gwork;
+		};
+		0E246244E1F4411287984A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D68034B83BAF410B86D50B21;
+			remoteInfo = ZERO_CHECK;
+		};
+		12F0907235BB48579321E322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EFC717FF34B4AD59A4D4231;
+			remoteInfo = GworkSDL2;
+		};
+		141AA8513F1E4EC891BC80D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D68034B83BAF410B86D50B21;
+			remoteInfo = ZERO_CHECK;
+		};
+		206400EB6CC84653B852A372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE61E9C065F40DEBE634B83;
+			remoteInfo = Gwork;
+		};
+		27CF825230784681AB317A86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BB9BCE370F44AB2BAE463B9;
+			remoteInfo = GworkTest;
+		};
+		2FF39332A353454D92356529 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BB9BCE370F44AB2BAE463B9;
+			remoteInfo = GworkTest;
+		};
+		33BE62B735934E3A9E2BDFF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9329059CC57C4E918954E4ED;
+			remoteInfo = GworkSDL2Sample;
+		};
+		3BCEDDA2568C48538F35DCAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D68034B83BAF410B86D50B21;
+			remoteInfo = ZERO_CHECK;
+		};
+		3FEBCE0F98014D529BE28ECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EFC717FF34B4AD59A4D4231;
+			remoteInfo = GworkSDL2;
+		};
+		40AFB346024746399DC9E0BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE61E9C065F40DEBE634B83;
+			remoteInfo = Gwork;
+		};
+		614EA4C6E5F34545821518E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 421B4340F73B4475BC707200;
+			remoteInfo = ALL_BUILD;
+		};
+		830EF0E3730C4A23A049F611 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EFC717FF34B4AD59A4D4231;
+			remoteInfo = GworkSDL2;
+		};
+		831F8CBC9C8245C6BFC10130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D68034B83BAF410B86D50B21;
+			remoteInfo = ZERO_CHECK;
+		};
+		9F3C028120374228A1DE7D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D68034B83BAF410B86D50B21;
+			remoteInfo = ZERO_CHECK;
+		};
+		B637E938D8234A828683FABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A566A1188274E31BF0B70ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D68034B83BAF410B86D50B21;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013C3FA98FB54780BD50DC6F /* RadioButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RadioButton.h; path = source/gwork/include/Gwork/Controls/RadioButton.h; sourceTree = SOURCE_ROOT; };
+		0290F251A46F44D3979894E4 /* HorizontalScrollBar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HorizontalScrollBar.cpp; path = source/gwork/source/Controls/HorizontalScrollBar.cpp; sourceTree = SOURCE_ROOT; };
+		038A1FB8A6444C1A8AEA4936 /* Modal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Modal.h; path = source/gwork/include/Gwork/Controls/Modal.h; sourceTree = SOURCE_ROOT; };
+		03DB86645215427FA1C677F2 /* Slider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Slider.cpp; path = source/gwork/source/Controls/Slider.cpp; sourceTree = SOURCE_ROOT; };
+		0645B971383B4E559910EB8A /* ScrollBar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScrollBar.cpp; path = source/gwork/source/Controls/ScrollBar.cpp; sourceTree = SOURCE_ROOT; };
+		079C3213B03540FE83635954 /* ScrollBarButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScrollBarButton.cpp; path = source/gwork/source/Controls/ScrollBarButton.cpp; sourceTree = SOURCE_ROOT; };
+		081CAD12AA544FD795251216 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = source/samples/CMakeFiles/GworkSDL2Sample.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		083C25961AB64CAE98450D71 /* Slider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Slider.h; path = source/gwork/include/Gwork/Controls/Slider.h; sourceTree = SOURCE_ROOT; };
+		0BBA72E226AA4C01A1779DF1 /* Dragger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Dragger.cpp; path = source/gwork/source/Controls/Dragger.cpp; sourceTree = SOURCE_ROOT; };
+		0BCD4E4F1DD94E0F89FE800D /* OpenSans.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = OpenSans.ttf; path = source/gwork/resource/OpenSans.ttf; sourceTree = SOURCE_ROOT; };
+		0C4AD4AF3FB54F9387A6F4FD /* Utility.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Utility.h; path = source/platform/include/Gwork/Utility.h; sourceTree = SOURCE_ROOT; };
+		0F276713C7A54FB3BCFEE4A1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = source/platform/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0F6439C4A04D4B1ABB11E141 /* TabControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TabControl.cpp; path = source/gwork/source/Controls/TabControl.cpp; sourceTree = SOURCE_ROOT; };
+		10B484FF5E734AAD80DDD599 /* Slider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Slider.cpp; path = source/test/source/api/Slider.cpp; sourceTree = SOURCE_ROOT; };
+		138113E92257432AB91F2F49 /* UiTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = UiTypes.h; path = source/gwork/include/Gwork/UiTypes.h; sourceTree = SOURCE_ROOT; };
+		147F90DC175F4D90AB98F1F5 /* RichLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RichLabel.h; path = source/gwork/include/Gwork/Controls/RichLabel.h; sourceTree = SOURCE_ROOT; };
+		1676DEB771E04BD3B6C6D233 /* Text.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Text.h; path = source/gwork/include/Gwork/Controls/Text.h; sourceTree = SOURCE_ROOT; };
+		16EE81F85B064F27B9BA5186 /* DragAndDrop.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DragAndDrop.cpp; path = source/gwork/source/DragAndDrop.cpp; sourceTree = SOURCE_ROOT; };
+		17043211EE1E4BA19E824712 /* test16.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = test16.png; path = source/test/resource/test16.png; sourceTree = SOURCE_ROOT; };
+		1724C87771764B1598C9E1C6 /* DockBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DockBase.cpp; path = source/gwork/source/Controls/DockBase.cpp; sourceTree = SOURCE_ROOT; };
+		183045EFF34148238455EA76 /* TabTitleBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TabTitleBar.h; path = source/gwork/include/Gwork/Controls/TabTitleBar.h; sourceTree = SOURCE_ROOT; };
+		189B3A5F70CC4F5AA0E6CC01 /* libGworkSDL2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGworkSDL2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1984FFFCE8674B32846A47DF /* Test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Test.cpp; path = source/test/source/Test.cpp; sourceTree = SOURCE_ROOT; };
+		1A57A70D8650458F9C7B8400 /* Tile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Tile.h; path = source/gwork/include/Gwork/Controls/Layout/Tile.h; sourceTree = SOURCE_ROOT; };
+		1B80F730D2B5447FB9DD5EC3 /* FieldLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FieldLabel.h; path = source/gwork/include/Gwork/Controls/FieldLabel.h; sourceTree = SOURCE_ROOT; };
+		1C15D9645357459DAB669CC4 /* Text.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Text.cpp; path = source/gwork/source/Controls/Text.cpp; sourceTree = SOURCE_ROOT; };
+		1CFD77E813594839A5C248C1 /* WindowControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WindowControl.cpp; path = source/gwork/source/Controls/WindowControl.cpp; sourceTree = SOURCE_ROOT; };
+		1DC504699467471A8D48BB25 /* NumericUpDown.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = NumericUpDown.h; path = source/gwork/include/Gwork/Controls/NumericUpDown.h; sourceTree = SOURCE_ROOT; };
+		1FCE449DAEEB45B7AF6F01CC /* TreeNode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TreeNode.h; path = source/gwork/include/Gwork/Controls/TreeNode.h; sourceTree = SOURCE_ROOT; };
+		2031BB9285344EA78933468B /* Gwork.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Gwork.cpp; path = source/gwork/source/Gwork.cpp; sourceTree = SOURCE_ROOT; };
+		203DCD6704D144D298798D00 /* ListBox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ListBox.h; path = source/gwork/include/Gwork/Controls/ListBox.h; sourceTree = SOURCE_ROOT; };
+		21E16484560C424188EA7C1F /* HSVColorPicker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HSVColorPicker.cpp; path = source/gwork/source/Controls/HSVColorPicker.cpp; sourceTree = SOURCE_ROOT; };
+		23D36D4B58B2455CB8AA33D6 /* TestAPI.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestAPI.h; path = source/test/include/Gwork/Test/TestAPI.h; sourceTree = SOURCE_ROOT; };
+		240313BE09CD481DB5C18B49 /* ScrollBarButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ScrollBarButton.h; path = source/gwork/include/Gwork/Controls/ScrollBarButton.h; sourceTree = SOURCE_ROOT; };
+		24577A4802BF45E28509E64F /* ProgressBar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ProgressBar.cpp; path = source/test/source/api/ProgressBar.cpp; sourceTree = SOURCE_ROOT; };
+		24F51867D81942DCBE99F457 /* Button.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Button.cpp; path = source/test/source/api/Button.cpp; sourceTree = SOURCE_ROOT; };
+		258CB0EA692647AB85C9CF3F /* TreeControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TreeControl.cpp; path = source/test/source/api/TreeControl.cpp; sourceTree = SOURCE_ROOT; };
+		287D5FE3D1634D749298292F /* Table.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Table.h; path = source/gwork/include/Gwork/Controls/Layout/Table.h; sourceTree = SOURCE_ROOT; };
+		2A8B089CA810447FAC1A5218 /* ImagePanel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImagePanel.h; path = source/gwork/include/Gwork/Controls/ImagePanel.h; sourceTree = SOURCE_ROOT; };
+		2B3ECEE8F6084ADD993E3BFB /* ProgressBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ProgressBar.h; path = source/gwork/include/Gwork/Controls/ProgressBar.h; sourceTree = SOURCE_ROOT; };
+		2B9D8DA82B1E467DA8DB9110 /* UserData.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = UserData.h; path = source/gwork/include/Gwork/UserData.h; sourceTree = SOURCE_ROOT; };
+		2BAB4C0149C74917B73D0002 /* ScrollControl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ScrollControl.h; path = source/gwork/include/Gwork/Controls/ScrollControl.h; sourceTree = SOURCE_ROOT; };
+		2BE63F316279487C9CECD5AD /* TextBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextBox.cpp; path = source/test/source/api/TextBox.cpp; sourceTree = SOURCE_ROOT; };
+		2CC04DC3ED1B4FE7AC6F7908 /* BaseProperty.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BaseProperty.h; path = source/gwork/include/Gwork/Controls/Property/BaseProperty.h; sourceTree = SOURCE_ROOT; };
+		2E38C0F2157540DB9883F630 /* Utility.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Utility.cpp; path = source/platform/platforms/Utility.cpp; sourceTree = SOURCE_ROOT; };
+		2EB61B011936410DA9F9E1A9 /* VerticalSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VerticalSlider.cpp; path = source/gwork/source/Controls/VerticalSlider.cpp; sourceTree = SOURCE_ROOT; };
+		3001CD882B9A4F7582F77F1F /* CrossPlatform.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CrossPlatform.cpp; path = source/platform/platforms/CrossPlatform.cpp; sourceTree = SOURCE_ROOT; };
+		300BD25D435846AB87A8C413 /* GroupBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GroupBox.cpp; path = source/test/source/api/GroupBox.cpp; sourceTree = SOURCE_ROOT; };
+		306167A36AA247E799677FC6 /* Simple.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Simple.h; path = source/gwork/include/Gwork/Skins/Simple.h; sourceTree = SOURCE_ROOT; };
+		3388956CFCC545478F5812FC /* Resizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Resizer.cpp; path = source/gwork/source/Controls/Resizer.cpp; sourceTree = SOURCE_ROOT; };
+		35023AC44935409B9E292BAC /* Text.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Text.h; path = source/gwork/include/Gwork/Controls/Property/Text.h; sourceTree = SOURCE_ROOT; };
+		35C2358DD4EB4D03BB4F9DE9 /* GworkSDL2Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = GworkSDL2Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3600B17F534743D78B397727 /* ComboBox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ComboBox.h; path = source/gwork/include/Gwork/Controls/Property/ComboBox.h; sourceTree = SOURCE_ROOT; };
+		38ED234F94E849D2AE856C45 /* Events.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Events.h; path = source/gwork/include/Gwork/Events.h; sourceTree = SOURCE_ROOT; };
+		392A2F2DDB724D33AAB676D6 /* TabControl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TabControl.h; path = source/gwork/include/Gwork/Controls/TabControl.h; sourceTree = SOURCE_ROOT; };
+		39A4C5140062490E8ACED3CE /* FileSave.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FileSave.cpp; path = source/gwork/source/Controls/Dialog/FileSave.cpp; sourceTree = SOURCE_ROOT; };
+		39CB890AFD7C45E09967E1CB /* Align.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Align.h; path = source/gwork/include/Gwork/Align.h; sourceTree = SOURCE_ROOT; };
+		3A434AFB24FD48A19A29A6C2 /* Properties.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Properties.cpp; path = source/test/source/api/Properties.cpp; sourceTree = SOURCE_ROOT; };
+		3AEB7A94FB4F4613AC66052E /* ControlList.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ControlList.cpp; path = source/gwork/source/ControlList.cpp; sourceTree = SOURCE_ROOT; };
+		3C9401A0B3EC42739E6D7549 /* ColorControls.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ColorControls.cpp; path = source/gwork/source/Controls/ColorControls.cpp; sourceTree = SOURCE_ROOT; };
+		3DE1C30D4F814F92B97139D9 /* DockBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DockBase.h; path = source/gwork/include/Gwork/Controls/DockBase.h; sourceTree = SOURCE_ROOT; };
+		3E357615FC4B482C91F190E7 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = source/samples/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3FBE81B1BA1641A5B8FCB0F9 /* Test.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Test.h; path = source/test/include/Gwork/Test/Test.h; sourceTree = SOURCE_ROOT; };
+		3FE7A15E9A6A4D9A844A410F /* ColorPicker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ColorPicker.cpp; path = source/gwork/source/Controls/ColorPicker.cpp; sourceTree = SOURCE_ROOT; };
+		46C594950B3244C185EED3D3 /* InputEventListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InputEventListener.h; path = source/platform/include/Gwork/InputEventListener.h; sourceTree = SOURCE_ROOT; };
+		477EAA66D3534BF0807DB27C /* DockedTabControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DockedTabControl.cpp; path = source/gwork/source/Controls/DockedTabControl.cpp; sourceTree = SOURCE_ROOT; };
+		4883903FBB8E47C49C716427 /* DockedTabControl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DockedTabControl.h; path = source/gwork/include/Gwork/Controls/DockedTabControl.h; sourceTree = SOURCE_ROOT; };
+		48E6839EBA1F4893AC9724C8 /* ImagePanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImagePanel.cpp; path = source/gwork/source/Controls/ImagePanel.cpp; sourceTree = SOURCE_ROOT; };
+		4912244EAB594CB99A7FA0FF /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4BA8F1DBFEF548EDBD756BE9 /* PageControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PageControl.cpp; path = source/test/source/api/PageControl.cpp; sourceTree = SOURCE_ROOT; };
+		4BB2824C5C8046BA86AD484F /* Query.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Query.cpp; path = source/gwork/source/Controls/Dialog/Query.cpp; sourceTree = SOURCE_ROOT; };
+		4BE6BDE24622498DA26DEEC9 /* Controls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Controls.h; path = source/gwork/include/Gwork/Controls.h; sourceTree = SOURCE_ROOT; };
+		4E70463E6A7E4D1CA43251C3 /* SDL2Sample.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SDL2Sample.cpp; path = source/samples/SDL2/SDL2Sample.cpp; sourceTree = SOURCE_ROOT; };
+		4FB1EE62B47A4421BD41650C /* Skin.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Skin.cpp; path = source/gwork/source/Skin.cpp; sourceTree = SOURCE_ROOT; };
+		50A1D4B276D640D6951AA956 /* ColorPicker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ColorPicker.h; path = source/gwork/include/Gwork/Controls/ColorPicker.h; sourceTree = SOURCE_ROOT; };
+		528894120B784F16BD1690F1 /* FileOpen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FileOpen.h; path = source/gwork/include/Gwork/Controls/Dialogs/FileOpen.h; sourceTree = SOURCE_ROOT; };
+		52CF3304BBEF40C7AFEA5DA0 /* WindowButtons.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WindowButtons.h; path = source/gwork/include/Gwork/Controls/WindowButtons.h; sourceTree = SOURCE_ROOT; };
+		552EE6819D044BF0BE0900CC /* PlatformTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PlatformTypes.h; path = source/platform/include/Gwork/PlatformTypes.h; sourceTree = SOURCE_ROOT; };
+		554D2387FA534C11922C6A64 /* ColorControls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ColorControls.h; path = source/gwork/include/Gwork/Controls/ColorControls.h; sourceTree = SOURCE_ROOT; };
+		5A8E77BE901344B4BDA72223 /* Properties.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Properties.h; path = source/gwork/include/Gwork/Controls/Properties.h; sourceTree = SOURCE_ROOT; };
+		5EB8C7663C474CA294CF2519 /* BaseRender.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BaseRender.cpp; path = source/gwork/source/BaseRender.cpp; sourceTree = SOURCE_ROOT; };
+		5EFE0882D2F243D6801A61D8 /* ScrollBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ScrollBar.h; path = source/gwork/include/Gwork/Controls/ScrollBar.h; sourceTree = SOURCE_ROOT; };
+		5F73A84F08FD4E7E9D0FC9E5 /* LabelClickable.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LabelClickable.cpp; path = source/gwork/source/Controls/LabelClickable.cpp; sourceTree = SOURCE_ROOT; };
+		5FCA796173764AB18D43F018 /* RadioButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RadioButton.cpp; path = source/test/source/api/RadioButton.cpp; sourceTree = SOURCE_ROOT; };
+		60C02636EA104C57AF992BD0 /* Platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Platform.h; path = source/platform/include/Gwork/Platform.h; sourceTree = SOURCE_ROOT; };
+		612A4A0E730A45899DFCDF71 /* CollapsibleCategory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CollapsibleCategory.h; path = source/gwork/include/Gwork/Controls/CollapsibleCategory.h; sourceTree = SOURCE_ROOT; };
+		61C7347121AB4D2E80A3AEFB /* StatusBar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StatusBar.cpp; path = source/test/source/api/StatusBar.cpp; sourceTree = SOURCE_ROOT; };
+		6229CCD2DFA64F22BBF72E4B /* WindowProvider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WindowProvider.h; path = source/platform/include/Gwork/WindowProvider.h; sourceTree = SOURCE_ROOT; };
+		638C33CCCBDB4184BA0BBBF6 /* HorizontalScrollBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HorizontalScrollBar.h; path = source/gwork/include/Gwork/Controls/HorizontalScrollBar.h; sourceTree = SOURCE_ROOT; };
+		64D3C46A024544C6B3319705 /* TabButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TabButton.h; path = source/gwork/include/Gwork/Controls/TabButton.h; sourceTree = SOURCE_ROOT; };
+		686D0A62F7204969BE44D29B /* HorizontalSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HorizontalSlider.h; path = source/gwork/include/Gwork/Controls/HorizontalSlider.h; sourceTree = SOURCE_ROOT; };
+		69592D85249342C9B5BCE965 /* Button.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Button.cpp; path = source/gwork/source/Controls/Button.cpp; sourceTree = SOURCE_ROOT; };
+		6A050FB428ED4F7C9007636F /* LabelClickable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = LabelClickable.h; path = source/gwork/include/Gwork/Controls/LabelClickable.h; sourceTree = SOURCE_ROOT; };
+		6A6CE701E5F44DAA9BDAE912 /* GroupBox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GroupBox.h; path = source/gwork/include/Gwork/Controls/GroupBox.h; sourceTree = SOURCE_ROOT; };
+		6C724B3B04A34AD980F8C294 /* TreeNode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TreeNode.cpp; path = source/gwork/source/Controls/TreeNode.cpp; sourceTree = SOURCE_ROOT; };
+		6CE40DF1162D4F3497EB6B7D /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = source/test/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6D038F5A676F4B47BDB4D224 /* HorizontalSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HorizontalSlider.cpp; path = source/gwork/source/Controls/HorizontalSlider.cpp; sourceTree = SOURCE_ROOT; };
+		6E653649876749B3926FBCE3 /* Splitters.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Splitters.h; path = source/gwork/include/Gwork/Controls/Splitters.h; sourceTree = SOURCE_ROOT; };
+		6F402E30A2064CBBA57E2C16 /* FileSave.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FileSave.h; path = source/gwork/include/Gwork/Controls/Dialogs/FileSave.h; sourceTree = SOURCE_ROOT; };
+		70B8F6DC350841D487007BC4 /* PropertyTree.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PropertyTree.cpp; path = source/gwork/source/Controls/PropertyTree.cpp; sourceTree = SOURCE_ROOT; };
+		711421C85A0148189830B2AE /* Checkbox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Checkbox.cpp; path = source/test/source/api/Checkbox.cpp; sourceTree = SOURCE_ROOT; };
+		72953F34E0CA4FD687430FD3 /* Anim.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Anim.cpp; path = source/gwork/source/Anim.cpp; sourceTree = SOURCE_ROOT; };
+		751E594D283D4C5090DD3F8B /* DebugBreak.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DebugBreak.h; path = source/platform/platforms/DebugBreak.h; sourceTree = SOURCE_ROOT; };
+		758DF8F2EAA7409C8D98BB3F /* MenuStrip.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MenuStrip.cpp; path = source/test/source/api/MenuStrip.cpp; sourceTree = SOURCE_ROOT; };
+		761D7D9D50204C56B90BB643 /* RichLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RichLabel.cpp; path = source/gwork/source/Controls/RichLabel.cpp; sourceTree = SOURCE_ROOT; };
+		7A9AEAFA4C1D45648A30FC13 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = docs/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7BC37B08C88045EE86106D58 /* VerticalScrollBar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VerticalScrollBar.cpp; path = source/gwork/source/Controls/VerticalScrollBar.cpp; sourceTree = SOURCE_ROOT; };
+		7D89FD5060F24B079642E121 /* Numeric.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Numeric.cpp; path = source/test/source/api/Numeric.cpp; sourceTree = SOURCE_ROOT; };
+		7DA8E1E7A6C84C2E867CDD66 /* VerticalScrollBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = VerticalScrollBar.h; path = source/gwork/include/Gwork/Controls/VerticalScrollBar.h; sourceTree = SOURCE_ROOT; };
+		7FD6661FEB0D47C8B53607F0 /* CollapsibleCategory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CollapsibleCategory.cpp; path = source/gwork/source/Controls/CollapsibleCategory.cpp; sourceTree = SOURCE_ROOT; };
+		7FE173016B6648A789A0BDB9 /* SDL2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SDL2.h; path = source/platform/include/Gwork/Renderers/SDL2.h; sourceTree = SOURCE_ROOT; };
+		81E674A076B54AF98B146DD2 /* Base.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Base.cpp; path = source/gwork/source/Controls/Base.cpp; sourceTree = SOURCE_ROOT; };
+		82FE87AFAE984AEDB3A62A21 /* ImagePanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImagePanel.cpp; path = source/test/source/api/ImagePanel.cpp; sourceTree = SOURCE_ROOT; };
+		845BAAA2CA42447A9E98BB17 /* CrossSplitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CrossSplitter.cpp; path = source/test/source/api/CrossSplitter.cpp; sourceTree = SOURCE_ROOT; };
+		8C5344180E754E2AB35999AE /* ComboBox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ComboBox.h; path = source/gwork/include/Gwork/Controls/ComboBox.h; sourceTree = SOURCE_ROOT; };
+		8C67E3877E6D438EB15C8B3D /* PlatformCommon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PlatformCommon.h; path = source/platform/include/Gwork/PlatformCommon.h; sourceTree = SOURCE_ROOT; };
+		8CF43851FB114612AF4D17BE /* Query.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Query.h; path = source/gwork/include/Gwork/Controls/Dialogs/Query.h; sourceTree = SOURCE_ROOT; };
+		8EA42D1A29EA45AC9D414C5C /* ProgressBar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ProgressBar.cpp; path = source/gwork/source/Controls/ProgressBar.cpp; sourceTree = SOURCE_ROOT; };
+		90F20537C81F4BFBA3807B2E /* ScrollControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScrollControl.cpp; path = source/gwork/source/Controls/ScrollControl.cpp; sourceTree = SOURCE_ROOT; };
+		93A7233CFBD84597BA59586E /* SDL2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SDL2.cpp; path = source/platform/renderers/SDL2/SDL2.cpp; sourceTree = SOURCE_ROOT; };
+		94E4B5E42960425DB5F74C0B /* FileOpen.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FileOpen.cpp; path = source/gwork/source/Controls/Dialog/FileOpen.cpp; sourceTree = SOURCE_ROOT; };
+		95FE55EA955D466AB40DD2D5 /* CheckBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CheckBox.cpp; path = source/gwork/source/Controls/CheckBox.cpp; sourceTree = SOURCE_ROOT; };
+		983E5124882E42028C9A1DDB /* ScrollControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScrollControl.cpp; path = source/test/source/api/ScrollControl.cpp; sourceTree = SOURCE_ROOT; };
+		997106D7C97348D18D8AFDC4 /* FolderOpen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FolderOpen.h; path = source/gwork/include/Gwork/Controls/Dialogs/FolderOpen.h; sourceTree = SOURCE_ROOT; };
+		9B2E225A1EAF4A1EBDEDCB4C /* ToolTip.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ToolTip.h; path = source/gwork/include/Gwork/ToolTip.h; sourceTree = SOURCE_ROOT; };
+		9C95CDE7DCAF434099A05812 /* Properties.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Properties.cpp; path = source/gwork/source/Controls/Properties.cpp; sourceTree = SOURCE_ROOT; };
+		9E0A2B5D019E44E8833F9F9F /* ComboBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ComboBox.cpp; path = source/test/source/api/ComboBox.cpp; sourceTree = SOURCE_ROOT; };
+		9E6377DDF059437ABED9767F /* ColorPicker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ColorPicker.cpp; path = source/test/source/api/ColorPicker.cpp; sourceTree = SOURCE_ROOT; };
+		9E84674756514E66B05B9988 /* MenuItem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MenuItem.cpp; path = source/gwork/source/Controls/MenuItem.cpp; sourceTree = SOURCE_ROOT; };
+		9EF1AA6D57C442C9A7BE3331 /* Rectangle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Rectangle.h; path = source/gwork/include/Gwork/Controls/Rectangle.h; sourceTree = SOURCE_ROOT; };
+		9FFAA4B2B9944A7288F61ADE /* Menu.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Menu.cpp; path = source/gwork/source/Controls/Menu.cpp; sourceTree = SOURCE_ROOT; };
+		A0CF289CB68E4AF0B9581BFA /* ScrollBarBar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScrollBarBar.cpp; path = source/gwork/source/Controls/ScrollBarBar.cpp; sourceTree = SOURCE_ROOT; };
+		A2CDACF34E864F8599773C61 /* InputHandler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InputHandler.h; path = source/gwork/include/Gwork/InputHandler.h; sourceTree = SOURCE_ROOT; };
+		A35AEA6B6FFA455D92416FB8 /* FolderPicker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FolderPicker.h; path = source/gwork/include/Gwork/Controls/FolderPicker.h; sourceTree = SOURCE_ROOT; };
+		A36AF9BEA28F46799F9400CD /* WindowCanvas.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WindowCanvas.h; path = source/gwork/include/Gwork/Controls/WindowCanvas.h; sourceTree = SOURCE_ROOT; };
+		ABFDA85773CF452887570ED9 /* Resizer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Resizer.h; path = source/gwork/include/Gwork/Controls/Resizer.h; sourceTree = SOURCE_ROOT; };
+		AD57BB28F1FD4DF2AC42AE45 /* FolderOpen.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FolderOpen.cpp; path = source/gwork/source/Controls/Dialog/FolderOpen.cpp; sourceTree = SOURCE_ROOT; };
+		AEA4AB2BEED143C6A2246D8F /* TestAPI.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestAPI.cpp; path = source/test/source/api/TestAPI.cpp; sourceTree = SOURCE_ROOT; };
+		AEB36C1F2E6B4E4AAF008644 /* Rectangle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Rectangle.cpp; path = source/gwork/source/Controls/Rectangle.cpp; sourceTree = SOURCE_ROOT; };
+		AEEED12DF5F848E395DFAD98 /* libGwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGwork.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC04DB38E4D42A480549871 /* TabStrip.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TabStrip.cpp; path = source/gwork/source/Controls/TabStrip.cpp; sourceTree = SOURCE_ROOT; };
+		B04515559D3441C398FD9CBC /* PlatformCommon.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlatformCommon.cpp; path = source/platform/platforms/PlatformCommon.cpp; sourceTree = SOURCE_ROOT; };
+		B0BF269E93624F2BB27E2C32 /* libGworkTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGworkTest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B11A3274E2FC45F18852EE8B /* CrossSplitter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CrossSplitter.h; path = source/gwork/include/Gwork/Controls/CrossSplitter.h; sourceTree = SOURCE_ROOT; };
+		B1BE8336D47540F0840AD668 /* Skin.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Skin.h; path = source/gwork/include/Gwork/Skin.h; sourceTree = SOURCE_ROOT; };
+		B657256BB1684D90BBEF205E /* FilePicker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FilePicker.h; path = source/gwork/include/Gwork/Controls/FilePicker.h; sourceTree = SOURCE_ROOT; };
+		B7AA8C3422208BD20034A094 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B7BE30ACEA3D4E75BC4F91E6 /* PropertyTree.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PropertyTree.h; path = source/gwork/include/Gwork/Controls/PropertyTree.h; sourceTree = SOURCE_ROOT; };
+		B824B834591142BD970A6723 /* Window.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Window.cpp; path = source/test/source/api/Window.cpp; sourceTree = SOURCE_ROOT; };
+		B8642CDD56194E4E8D0A49CC /* ListBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ListBox.cpp; path = source/test/source/api/ListBox.cpp; sourceTree = SOURCE_ROOT; };
+		B99EE27D1D6946FD838EDF67 /* ComboBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ComboBox.cpp; path = source/gwork/source/Controls/ComboBox.cpp; sourceTree = SOURCE_ROOT; };
+		B9C5313A97D9465084BD5523 /* InputHandler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InputHandler.cpp; path = source/gwork/source/InputHandler.cpp; sourceTree = SOURCE_ROOT; };
+		B9E90AA9895E46EC9432EA12 /* WindowCanvas.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WindowCanvas.cpp; path = source/gwork/source/Controls/WindowCanvas.cpp; sourceTree = SOURCE_ROOT; };
+		BA1C3A0A24EC4F328283C34B /* StatusBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = StatusBar.h; path = source/gwork/include/Gwork/Controls/StatusBar.h; sourceTree = SOURCE_ROOT; };
+		BB15ECCE25C24474AB55ABB4 /* ListBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ListBox.cpp; path = source/gwork/source/Controls/ListBox.cpp; sourceTree = SOURCE_ROOT; };
+		BB563C12322A4ADA99F6389D /* Canvas.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Canvas.h; path = source/gwork/include/Gwork/Controls/Canvas.h; sourceTree = SOURCE_ROOT; };
+		BBE1429F034A4ECAB3423290 /* PageControl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PageControl.h; path = source/gwork/include/Gwork/Controls/PageControl.h; sourceTree = SOURCE_ROOT; };
+		BBFADC07B3CD4434BC2C6154 /* Button.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Button.h; path = source/gwork/include/Gwork/Controls/Button.h; sourceTree = SOURCE_ROOT; };
+		BDD06EA541FF46B5A1E9B80B /* GroupBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GroupBox.cpp; path = source/gwork/source/Controls/GroupBox.cpp; sourceTree = SOURCE_ROOT; };
+		BE02E799896740B48094FEF3 /* MenuStrip.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MenuStrip.h; path = source/gwork/include/Gwork/Controls/MenuStrip.h; sourceTree = SOURCE_ROOT; };
+		BEA687AEBB884239BDBFE79B /* Base.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Base.h; path = source/gwork/include/Gwork/Controls/Base.h; sourceTree = SOURCE_ROOT; };
+		BEC8952CB7FD4B1B83AC6252 /* ColorSelector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ColorSelector.h; path = source/gwork/include/Gwork/Controls/Property/ColorSelector.h; sourceTree = SOURCE_ROOT; };
+		BFDC2EC17730494282205260 /* ToolBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ToolBar.h; path = source/gwork/include/Gwork/Controls/ToolBar.h; sourceTree = SOURCE_ROOT; };
+		C0187C7D8F8D46FC94197A74 /* File.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = File.h; path = source/gwork/include/Gwork/Controls/Property/File.h; sourceTree = SOURCE_ROOT; };
+		C4D584F15C264A4BA527289C /* Config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Config.h; path = source/platform/include/Gwork/Config.h; sourceTree = SOURCE_ROOT; };
+		C6069BEB12CE4AACBC6ABF2B /* VerticalSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = VerticalSlider.h; path = source/gwork/include/Gwork/Controls/VerticalSlider.h; sourceTree = SOURCE_ROOT; };
+		C7641D8B0ADA4C3CB2BD3D36 /* TabControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TabControl.cpp; path = source/test/source/api/TabControl.cpp; sourceTree = SOURCE_ROOT; };
+		C87884493F674B00B96E2BAD /* DefaultSkin.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = DefaultSkin.png; path = source/gwork/resource/DefaultSkin.png; sourceTree = SOURCE_ROOT; };
+		C992F53391D942ABB6855A32 /* Folder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Folder.h; path = source/gwork/include/Gwork/Controls/Property/Folder.h; sourceTree = SOURCE_ROOT; };
+		C9AF9DDE44F842148BD6D67F /* TextBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextBox.cpp; path = source/gwork/source/Controls/TextBox.cpp; sourceTree = SOURCE_ROOT; };
+		CA47F3F146E445BBB0AEA59E /* ResizableControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ResizableControl.cpp; path = source/gwork/source/Controls/ResizableControl.cpp; sourceTree = SOURCE_ROOT; };
+		CA803969339747B78AD8E29D /* ToolTip.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ToolTip.cpp; path = source/gwork/source/ToolTip.cpp; sourceTree = SOURCE_ROOT; };
+		CB88C90523B943FFA5C916DF /* Label.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Label.cpp; path = source/gwork/source/Controls/Label.cpp; sourceTree = SOURCE_ROOT; };
+		CBB0FB136EE44BF1A59A02E7 /* Label.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Label.cpp; path = source/test/source/api/Label.cpp; sourceTree = SOURCE_ROOT; };
+		CD290E7670FF4AB591019981 /* BaseRender.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BaseRender.h; path = source/platform/include/Gwork/BaseRender.h; sourceTree = SOURCE_ROOT; };
+		D154F89F529049A3803CF203 /* ControlList.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ControlList.h; path = source/gwork/include/Gwork/ControlList.h; sourceTree = SOURCE_ROOT; };
+		D19DC3266C044D65A2D550BC /* SplitterBar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SplitterBar.cpp; path = source/gwork/source/Controls/SplitterBar.cpp; sourceTree = SOURCE_ROOT; };
+		D1CAA47A710A4F6791820F54 /* MenuItem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MenuItem.h; path = source/gwork/include/Gwork/Controls/MenuItem.h; sourceTree = SOURCE_ROOT; };
+		D272BDF3D1BF4F24971EBE79 /* logo.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = logo.png; path = source/test/resource/logo.png; sourceTree = SOURCE_ROOT; };
+		D3D5210DABBC40D3A1CBEFCC /* Label.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Label.h; path = source/gwork/include/Gwork/Controls/Label.h; sourceTree = SOURCE_ROOT; };
+		D4E8E49ADDF847DD9C71E713 /* TexturedBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TexturedBase.h; path = source/gwork/include/Gwork/Skins/TexturedBase.h; sourceTree = SOURCE_ROOT; };
+		D930AD3F778148ED8A951DB2 /* CollapsibleList.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CollapsibleList.cpp; path = source/test/source/api/CollapsibleList.cpp; sourceTree = SOURCE_ROOT; };
+		DBC5F206F14047C28B9F9E8E /* Highlight.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Highlight.h; path = source/gwork/include/Gwork/Controls/Highlight.h; sourceTree = SOURCE_ROOT; };
+		DC5C8E7173F44A9B817D1C67 /* Checkbox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Checkbox.h; path = source/gwork/include/Gwork/Controls/Property/Checkbox.h; sourceTree = SOURCE_ROOT; };
+		DC770B2458FB4007860F20BF /* Position.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Position.h; path = source/gwork/include/Gwork/Controls/Layout/Position.h; sourceTree = SOURCE_ROOT; };
+		DF746B196F1B4278ABA4D4AE /* Hook.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Hook.cpp; path = source/gwork/source/Hook.cpp; sourceTree = SOURCE_ROOT; };
+		DFE1D413C62C4D3C8EC77089 /* HSVColorPicker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HSVColorPicker.h; path = source/gwork/include/Gwork/Controls/HSVColorPicker.h; sourceTree = SOURCE_ROOT; };
+		E0FFE211BFE0468C9B923627 /* WindowControl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WindowControl.h; path = source/gwork/include/Gwork/Controls/WindowControl.h; sourceTree = SOURCE_ROOT; };
+		E4841951A28E4A9399EA9657 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = source/gwork/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E4B690989BC347F6A1529167 /* Version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Version.h; path = source/platform/include/Gwork/Version.h; sourceTree = SOURCE_ROOT; };
+		E5E76477BF09437293CC7F98 /* TreeControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TreeControl.cpp; path = source/gwork/source/Controls/TreeControl.cpp; sourceTree = SOURCE_ROOT; };
+		E85E06F940D8405C93E6EA58 /* NumericUpDown.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NumericUpDown.cpp; path = source/gwork/source/Controls/NumericUpDown.cpp; sourceTree = SOURCE_ROOT; };
+		E8611B42951A4E9AA468DB03 /* MenuStrip.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MenuStrip.cpp; path = source/gwork/source/Controls/MenuStrip.cpp; sourceTree = SOURCE_ROOT; };
+		E915CF8349DB4F419F81DF6A /* PageControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PageControl.cpp; path = source/gwork/source/Controls/PageControl.cpp; sourceTree = SOURCE_ROOT; };
+		E9FB7FAA65F84DBEA40AB2B3 /* Canvas.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Canvas.cpp; path = source/gwork/source/Controls/Canvas.cpp; sourceTree = SOURCE_ROOT; };
+		EA0189C562A849A7ADF87D3C /* Texturing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Texturing.h; path = source/gwork/include/Gwork/Skins/Texturing.h; sourceTree = SOURCE_ROOT; };
+		EA5315E697EE4862B25740D7 /* ScrollBarBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ScrollBarBar.h; path = source/gwork/include/Gwork/Controls/ScrollBarBar.h; sourceTree = SOURCE_ROOT; };
+		EB1DAD84E36E42B29CE05FA7 /* CheckBox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CheckBox.h; path = source/gwork/include/Gwork/Controls/CheckBox.h; sourceTree = SOURCE_ROOT; };
+		EC645C161CE44F65B91A2FEB /* Anim.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Anim.h; path = source/gwork/include/Gwork/Anim.h; sourceTree = SOURCE_ROOT; };
+		EC6C232B4359459BBBE1012E /* ResizableControl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ResizableControl.h; path = source/gwork/include/Gwork/Controls/ResizableControl.h; sourceTree = SOURCE_ROOT; };
+		ED0240A8A10E4A27BA523E8F /* LabelMultiline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LabelMultiline.cpp; path = source/test/source/api/LabelMultiline.cpp; sourceTree = SOURCE_ROOT; };
+		ED72FE1E657E48F8A274FA84 /* TabButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TabButton.cpp; path = source/gwork/source/Controls/TabButton.cpp; sourceTree = SOURCE_ROOT; };
+		EEBAA24A9F8F4EEA84A6BE45 /* Hook.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Hook.h; path = source/gwork/include/Gwork/Hook.h; sourceTree = SOURCE_ROOT; };
+		F07DCFCAC70C4AEBA52099CD /* CollapsibleList.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CollapsibleList.h; path = source/gwork/include/Gwork/Controls/CollapsibleList.h; sourceTree = SOURCE_ROOT; };
+		F19472B4C767414F8F444690 /* TextBox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TextBox.h; path = source/gwork/include/Gwork/Controls/TextBox.h; sourceTree = SOURCE_ROOT; };
+		F2307E0332BF4849A3C47D6E /* Menu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Menu.h; path = source/gwork/include/Gwork/Controls/Menu.h; sourceTree = SOURCE_ROOT; };
+		F2BD769ECB1C4F32A81E3998 /* RadioButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RadioButton.cpp; path = source/gwork/source/Controls/RadioButton.cpp; sourceTree = SOURCE_ROOT; };
+		F3857CFDB6624632BD7E3B3B /* CrossSplitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CrossSplitter.cpp; path = source/gwork/source/Controls/CrossSplitter.cpp; sourceTree = SOURCE_ROOT; };
+		F41E3371AE97403BA4935EFD /* RadioButtonController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RadioButtonController.h; path = source/gwork/include/Gwork/Controls/RadioButtonController.h; sourceTree = SOURCE_ROOT; };
+		F423485E30A340B8B37FC6AD /* TreeControl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TreeControl.h; path = source/gwork/include/Gwork/Controls/TreeControl.h; sourceTree = SOURCE_ROOT; };
+		F46AB54A07964A4FB10EF831 /* RadioButtonController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RadioButtonController.cpp; path = source/gwork/source/Controls/RadioButtonController.cpp; sourceTree = SOURCE_ROOT; };
+		F47C451DACD84631B777F6E1 /* TextBoxNumeric.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextBoxNumeric.cpp; path = source/gwork/source/Controls/TextBoxNumeric.cpp; sourceTree = SOURCE_ROOT; };
+		F5BBA5F804224BCEAE5FCD66 /* TabStrip.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TabStrip.h; path = source/gwork/include/Gwork/Controls/TabStrip.h; sourceTree = SOURCE_ROOT; };
+		F766838E2ED1432C90CDF9EE /* DragAndDrop.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DragAndDrop.h; path = source/gwork/include/Gwork/DragAndDrop.h; sourceTree = SOURCE_ROOT; };
+		F7886885DC0044418127EC0D /* Gwork.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Gwork.h; path = source/gwork/include/Gwork/Gwork.h; sourceTree = SOURCE_ROOT; };
+		F99B3B8AD5CA432B87309EB4 /* Dragger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Dragger.h; path = source/gwork/include/Gwork/Controls/Dragger.h; sourceTree = SOURCE_ROOT; };
+		F9F28CB51FC243F9B1DFF0DA /* SDL2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SDL2.h; path = source/platform/include/Gwork/Input/SDL2.h; sourceTree = SOURCE_ROOT; };
+		FC04F8C72CFE409596F03C74 /* SplitterBar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SplitterBar.h; path = source/gwork/include/Gwork/Controls/SplitterBar.h; sourceTree = SOURCE_ROOT; };
+		FD01D385CF7C42FB89D917C0 /* Events.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Events.cpp; path = source/gwork/source/Events.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7AA8C3222208BCB0034A094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7AA8C3522208BD20034A094 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07A704019EC049C48B443388 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F872E505D2494824A01C6D1F /* API */,
+				1984FFFCE8674B32846A47DF /* Test.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		0BF2A2E85D334560A1D56CDB /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				A0007593F1054E1E9D697499 /* CMake Rules */,
+				4912244EAB594CB99A7FA0FF /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		17CBB8716B664F60AE1409D2 /* gworkTest */ = {
+			isa = PBXGroup;
+			children = (
+				D27966344BF347C6A106B614 /* Headers */,
+				07A704019EC049C48B443388 /* Source */,
+				6CE40DF1162D4F3497EB6B7D /* CMakeLists.txt */,
+			);
+			name = gworkTest;
+			sourceTree = "<group>";
+		};
+		21D74FBF7A2B48E69211F283 /* gworkSDL2 */ = {
+			isa = PBXGroup;
+			children = (
+				ACD3A23F72A44D2D8F2D3D7E /* Headers */,
+				82919660C9654E93A849C54E /* Source */,
+				0F276713C7A54FB3BCFEE4A1 /* CMakeLists.txt */,
+			);
+			name = gworkSDL2;
+			sourceTree = "<group>";
+		};
+		2417F1DF19DF47BD8FC0C1C9 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				8CFE6A76BB82464CB157BCEF /* Dialog */,
+				81E674A076B54AF98B146DD2 /* Base.cpp */,
+				69592D85249342C9B5BCE965 /* Button.cpp */,
+				E9FB7FAA65F84DBEA40AB2B3 /* Canvas.cpp */,
+				95FE55EA955D466AB40DD2D5 /* CheckBox.cpp */,
+				7FD6661FEB0D47C8B53607F0 /* CollapsibleCategory.cpp */,
+				3C9401A0B3EC42739E6D7549 /* ColorControls.cpp */,
+				3FE7A15E9A6A4D9A844A410F /* ColorPicker.cpp */,
+				B99EE27D1D6946FD838EDF67 /* ComboBox.cpp */,
+				F3857CFDB6624632BD7E3B3B /* CrossSplitter.cpp */,
+				1724C87771764B1598C9E1C6 /* DockBase.cpp */,
+				477EAA66D3534BF0807DB27C /* DockedTabControl.cpp */,
+				0BBA72E226AA4C01A1779DF1 /* Dragger.cpp */,
+				BDD06EA541FF46B5A1E9B80B /* GroupBox.cpp */,
+				21E16484560C424188EA7C1F /* HSVColorPicker.cpp */,
+				0290F251A46F44D3979894E4 /* HorizontalScrollBar.cpp */,
+				6D038F5A676F4B47BDB4D224 /* HorizontalSlider.cpp */,
+				48E6839EBA1F4893AC9724C8 /* ImagePanel.cpp */,
+				CB88C90523B943FFA5C916DF /* Label.cpp */,
+				5F73A84F08FD4E7E9D0FC9E5 /* LabelClickable.cpp */,
+				BB15ECCE25C24474AB55ABB4 /* ListBox.cpp */,
+				9FFAA4B2B9944A7288F61ADE /* Menu.cpp */,
+				9E84674756514E66B05B9988 /* MenuItem.cpp */,
+				E8611B42951A4E9AA468DB03 /* MenuStrip.cpp */,
+				E85E06F940D8405C93E6EA58 /* NumericUpDown.cpp */,
+				E915CF8349DB4F419F81DF6A /* PageControl.cpp */,
+				8EA42D1A29EA45AC9D414C5C /* ProgressBar.cpp */,
+				9C95CDE7DCAF434099A05812 /* Properties.cpp */,
+				70B8F6DC350841D487007BC4 /* PropertyTree.cpp */,
+				F2BD769ECB1C4F32A81E3998 /* RadioButton.cpp */,
+				F46AB54A07964A4FB10EF831 /* RadioButtonController.cpp */,
+				AEB36C1F2E6B4E4AAF008644 /* Rectangle.cpp */,
+				CA47F3F146E445BBB0AEA59E /* ResizableControl.cpp */,
+				3388956CFCC545478F5812FC /* Resizer.cpp */,
+				761D7D9D50204C56B90BB643 /* RichLabel.cpp */,
+				0645B971383B4E559910EB8A /* ScrollBar.cpp */,
+				A0CF289CB68E4AF0B9581BFA /* ScrollBarBar.cpp */,
+				079C3213B03540FE83635954 /* ScrollBarButton.cpp */,
+				90F20537C81F4BFBA3807B2E /* ScrollControl.cpp */,
+				03DB86645215427FA1C677F2 /* Slider.cpp */,
+				D19DC3266C044D65A2D550BC /* SplitterBar.cpp */,
+				ED72FE1E657E48F8A274FA84 /* TabButton.cpp */,
+				0F6439C4A04D4B1ABB11E141 /* TabControl.cpp */,
+				AFC04DB38E4D42A480549871 /* TabStrip.cpp */,
+				1C15D9645357459DAB669CC4 /* Text.cpp */,
+				C9AF9DDE44F842148BD6D67F /* TextBox.cpp */,
+				F47C451DACD84631B777F6E1 /* TextBoxNumeric.cpp */,
+				E5E76477BF09437293CC7F98 /* TreeControl.cpp */,
+				6C724B3B04A34AD980F8C294 /* TreeNode.cpp */,
+				7BC37B08C88045EE86106D58 /* VerticalScrollBar.cpp */,
+				2EB61B011936410DA9F9E1A9 /* VerticalSlider.cpp */,
+				B9E90AA9895E46EC9432EA12 /* WindowCanvas.cpp */,
+				1CFD77E813594839A5C248C1 /* WindowControl.cpp */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		2A5D419A444C4F7C954E135C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2F991950D2D7423B9FC7941D /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				35A970466C3A4D25B8A19822 /* Layout */,
+				FCF44EE050A74B6DB7E61298 /* Property */,
+				E53E418785544A7BBBA8AFFC /* Dialogs */,
+				BEA687AEBB884239BDBFE79B /* Base.h */,
+				BBFADC07B3CD4434BC2C6154 /* Button.h */,
+				BB563C12322A4ADA99F6389D /* Canvas.h */,
+				EB1DAD84E36E42B29CE05FA7 /* CheckBox.h */,
+				612A4A0E730A45899DFCDF71 /* CollapsibleCategory.h */,
+				F07DCFCAC70C4AEBA52099CD /* CollapsibleList.h */,
+				554D2387FA534C11922C6A64 /* ColorControls.h */,
+				50A1D4B276D640D6951AA956 /* ColorPicker.h */,
+				8C5344180E754E2AB35999AE /* ComboBox.h */,
+				B11A3274E2FC45F18852EE8B /* CrossSplitter.h */,
+				3DE1C30D4F814F92B97139D9 /* DockBase.h */,
+				4883903FBB8E47C49C716427 /* DockedTabControl.h */,
+				F99B3B8AD5CA432B87309EB4 /* Dragger.h */,
+				1B80F730D2B5447FB9DD5EC3 /* FieldLabel.h */,
+				B657256BB1684D90BBEF205E /* FilePicker.h */,
+				A35AEA6B6FFA455D92416FB8 /* FolderPicker.h */,
+				6A6CE701E5F44DAA9BDAE912 /* GroupBox.h */,
+				DFE1D413C62C4D3C8EC77089 /* HSVColorPicker.h */,
+				DBC5F206F14047C28B9F9E8E /* Highlight.h */,
+				638C33CCCBDB4184BA0BBBF6 /* HorizontalScrollBar.h */,
+				686D0A62F7204969BE44D29B /* HorizontalSlider.h */,
+				2A8B089CA810447FAC1A5218 /* ImagePanel.h */,
+				D3D5210DABBC40D3A1CBEFCC /* Label.h */,
+				6A050FB428ED4F7C9007636F /* LabelClickable.h */,
+				203DCD6704D144D298798D00 /* ListBox.h */,
+				F2307E0332BF4849A3C47D6E /* Menu.h */,
+				D1CAA47A710A4F6791820F54 /* MenuItem.h */,
+				BE02E799896740B48094FEF3 /* MenuStrip.h */,
+				038A1FB8A6444C1A8AEA4936 /* Modal.h */,
+				1DC504699467471A8D48BB25 /* NumericUpDown.h */,
+				BBE1429F034A4ECAB3423290 /* PageControl.h */,
+				2B3ECEE8F6084ADD993E3BFB /* ProgressBar.h */,
+				5A8E77BE901344B4BDA72223 /* Properties.h */,
+				B7BE30ACEA3D4E75BC4F91E6 /* PropertyTree.h */,
+				013C3FA98FB54780BD50DC6F /* RadioButton.h */,
+				F41E3371AE97403BA4935EFD /* RadioButtonController.h */,
+				9EF1AA6D57C442C9A7BE3331 /* Rectangle.h */,
+				EC6C232B4359459BBBE1012E /* ResizableControl.h */,
+				ABFDA85773CF452887570ED9 /* Resizer.h */,
+				147F90DC175F4D90AB98F1F5 /* RichLabel.h */,
+				5EFE0882D2F243D6801A61D8 /* ScrollBar.h */,
+				EA5315E697EE4862B25740D7 /* ScrollBarBar.h */,
+				240313BE09CD481DB5C18B49 /* ScrollBarButton.h */,
+				2BAB4C0149C74917B73D0002 /* ScrollControl.h */,
+				083C25961AB64CAE98450D71 /* Slider.h */,
+				FC04F8C72CFE409596F03C74 /* SplitterBar.h */,
+				6E653649876749B3926FBCE3 /* Splitters.h */,
+				BA1C3A0A24EC4F328283C34B /* StatusBar.h */,
+				64D3C46A024544C6B3319705 /* TabButton.h */,
+				392A2F2DDB724D33AAB676D6 /* TabControl.h */,
+				F5BBA5F804224BCEAE5FCD66 /* TabStrip.h */,
+				183045EFF34148238455EA76 /* TabTitleBar.h */,
+				1676DEB771E04BD3B6C6D233 /* Text.h */,
+				F19472B4C767414F8F444690 /* TextBox.h */,
+				BFDC2EC17730494282205260 /* ToolBar.h */,
+				F423485E30A340B8B37FC6AD /* TreeControl.h */,
+				1FCE449DAEEB45B7AF6F01CC /* TreeNode.h */,
+				7DA8E1E7A6C84C2E867CDD66 /* VerticalScrollBar.h */,
+				C6069BEB12CE4AACBC6ABF2B /* VerticalSlider.h */,
+				52CF3304BBEF40C7AFEA5DA0 /* WindowButtons.h */,
+				A36AF9BEA28F46799F9400CD /* WindowCanvas.h */,
+				E0FFE211BFE0468C9B923627 /* WindowControl.h */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		3231342142B04B10A6AFEB0A /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				2A5D419A444C4F7C954E135C /* CMake Rules */,
+				7A9AEAFA4C1D45648A30FC13 /* CMakeLists.txt */,
+			);
+			name = doc;
+			sourceTree = "<group>";
+		};
+		35A970466C3A4D25B8A19822 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				DC770B2458FB4007860F20BF /* Position.h */,
+				287D5FE3D1634D749298292F /* Table.h */,
+				1A57A70D8650458F9C7B8400 /* Tile.h */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		3D7F9606C7FE4B768F572E65 /* Skins */ = {
+			isa = PBXGroup;
+			children = (
+				306167A36AA247E799677FC6 /* Simple.h */,
+				D4E8E49ADDF847DD9C71E713 /* TexturedBase.h */,
+				EA0189C562A849A7ADF87D3C /* Texturing.h */,
+			);
+			name = Skins;
+			sourceTree = "<group>";
+		};
+		53BAF251C1F54F1CA25414CD = {
+			isa = PBXGroup;
+			children = (
+				0BF2A2E85D334560A1D56CDB /* ALL_BUILD */,
+				21D74FBF7A2B48E69211F283 /* gworkSDL2 */,
+				9DE994D28F6343039F80B574 /* gwork */,
+				17CBB8716B664F60AE1409D2 /* gworkTest */,
+				794C0B1CBBC14D2B8BB58052 /* gworkSDL2Sample */,
+				3231342142B04B10A6AFEB0A /* doc */,
+				F811BB083BC6481D9D50072C /* Products */,
+				B7AA8C3322208BD20034A094 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		794C0B1CBBC14D2B8BB58052 /* gworkSDL2Sample */ = {
+			isa = PBXGroup;
+			children = (
+				B3049D05AD4B479BAEFC134E /* Source Files */,
+				9919BF5CE1E94E0A8092C3C2 /* Resources */,
+				0BCD4E4F1DD94E0F89FE800D /* OpenSans.ttf */,
+				3E357615FC4B482C91F190E7 /* CMakeLists.txt */,
+			);
+			name = gworkSDL2Sample;
+			sourceTree = "<group>";
+		};
+		82919660C9654E93A849C54E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3001CD882B9A4F7582F77F1F /* CrossPlatform.cpp */,
+				751E594D283D4C5090DD3F8B /* DebugBreak.h */,
+				B04515559D3441C398FD9CBC /* PlatformCommon.cpp */,
+				2E38C0F2157540DB9883F630 /* Utility.cpp */,
+				93A7233CFBD84597BA59586E /* SDL2.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		88AC5DAF4DEF450582ACCDAD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2417F1DF19DF47BD8FC0C1C9 /* Controls */,
+				72953F34E0CA4FD687430FD3 /* Anim.cpp */,
+				5EB8C7663C474CA294CF2519 /* BaseRender.cpp */,
+				3AEB7A94FB4F4613AC66052E /* ControlList.cpp */,
+				16EE81F85B064F27B9BA5186 /* DragAndDrop.cpp */,
+				FD01D385CF7C42FB89D917C0 /* Events.cpp */,
+				2031BB9285344EA78933468B /* Gwork.cpp */,
+				DF746B196F1B4278ABA4D4AE /* Hook.cpp */,
+				B9C5313A97D9465084BD5523 /* InputHandler.cpp */,
+				4FB1EE62B47A4421BD41650C /* Skin.cpp */,
+				CA803969339747B78AD8E29D /* ToolTip.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8CFE6A76BB82464CB157BCEF /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				94E4B5E42960425DB5F74C0B /* FileOpen.cpp */,
+				39A4C5140062490E8ACED3CE /* FileSave.cpp */,
+				AD57BB28F1FD4DF2AC42AE45 /* FolderOpen.cpp */,
+				4BB2824C5C8046BA86AD484F /* Query.cpp */,
+			);
+			name = Dialog;
+			sourceTree = "<group>";
+		};
+		9919BF5CE1E94E0A8092C3C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C87884493F674B00B96E2BAD /* DefaultSkin.png */,
+				081CAD12AA544FD795251216 /* Info.plist */,
+				D272BDF3D1BF4F24971EBE79 /* logo.png */,
+				17043211EE1E4BA19E824712 /* test16.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9DE994D28F6343039F80B574 /* gwork */ = {
+			isa = PBXGroup;
+			children = (
+				CAFE918030E6485E90199126 /* Headers */,
+				88AC5DAF4DEF450582ACCDAD /* Source */,
+				E4841951A28E4A9399EA9657 /* CMakeLists.txt */,
+			);
+			name = gwork;
+			sourceTree = "<group>";
+		};
+		A0007593F1054E1E9D697499 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		ACD3A23F72A44D2D8F2D3D7E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FD0851CF3316485BB7C840DF /* Renderer */,
+				DF7EA0BB7BC34919B1EE15A5 /* Input */,
+				CD290E7670FF4AB591019981 /* BaseRender.h */,
+				C4D584F15C264A4BA527289C /* Config.h */,
+				46C594950B3244C185EED3D3 /* InputEventListener.h */,
+				60C02636EA104C57AF992BD0 /* Platform.h */,
+				8C67E3877E6D438EB15C8B3D /* PlatformCommon.h */,
+				552EE6819D044BF0BE0900CC /* PlatformTypes.h */,
+				0C4AD4AF3FB54F9387A6F4FD /* Utility.h */,
+				E4B690989BC347F6A1529167 /* Version.h */,
+				6229CCD2DFA64F22BBF72E4B /* WindowProvider.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		B3049D05AD4B479BAEFC134E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E70463E6A7E4D1CA43251C3 /* SDL2Sample.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B7AA8C3322208BD20034A094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7AA8C3422208BD20034A094 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAFE918030E6485E90199126 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2F991950D2D7423B9FC7941D /* Controls */,
+				3D7F9606C7FE4B768F572E65 /* Skins */,
+				39CB890AFD7C45E09967E1CB /* Align.h */,
+				EC645C161CE44F65B91A2FEB /* Anim.h */,
+				D154F89F529049A3803CF203 /* ControlList.h */,
+				4BE6BDE24622498DA26DEEC9 /* Controls.h */,
+				F766838E2ED1432C90CDF9EE /* DragAndDrop.h */,
+				38ED234F94E849D2AE856C45 /* Events.h */,
+				F7886885DC0044418127EC0D /* Gwork.h */,
+				EEBAA24A9F8F4EEA84A6BE45 /* Hook.h */,
+				A2CDACF34E864F8599773C61 /* InputHandler.h */,
+				B1BE8336D47540F0840AD668 /* Skin.h */,
+				9B2E225A1EAF4A1EBDEDCB4C /* ToolTip.h */,
+				138113E92257432AB91F2F49 /* UiTypes.h */,
+				2B9D8DA82B1E467DA8DB9110 /* UserData.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		D27966344BF347C6A106B614 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				3FBE81B1BA1641A5B8FCB0F9 /* Test.h */,
+				23D36D4B58B2455CB8AA33D6 /* TestAPI.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		DF7EA0BB7BC34919B1EE15A5 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				F9F28CB51FC243F9B1DFF0DA /* SDL2.h */,
+			);
+			name = Input;
+			sourceTree = "<group>";
+		};
+		E53E418785544A7BBBA8AFFC /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				528894120B784F16BD1690F1 /* FileOpen.h */,
+				6F402E30A2064CBBA57E2C16 /* FileSave.h */,
+				997106D7C97348D18D8AFDC4 /* FolderOpen.h */,
+				8CF43851FB114612AF4D17BE /* Query.h */,
+			);
+			name = Dialogs;
+			sourceTree = "<group>";
+		};
+		F811BB083BC6481D9D50072C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEEED12DF5F848E395DFAD98 /* libGwork.a */,
+				189B3A5F70CC4F5AA0E6CC01 /* libGworkSDL2.a */,
+				35C2358DD4EB4D03BB4F9DE9 /* GworkSDL2Sample.app */,
+				B0BF269E93624F2BB27E2C32 /* libGworkTest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F872E505D2494824A01C6D1F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				24F51867D81942DCBE99F457 /* Button.cpp */,
+				711421C85A0148189830B2AE /* Checkbox.cpp */,
+				D930AD3F778148ED8A951DB2 /* CollapsibleList.cpp */,
+				9E6377DDF059437ABED9767F /* ColorPicker.cpp */,
+				9E0A2B5D019E44E8833F9F9F /* ComboBox.cpp */,
+				845BAAA2CA42447A9E98BB17 /* CrossSplitter.cpp */,
+				300BD25D435846AB87A8C413 /* GroupBox.cpp */,
+				82FE87AFAE984AEDB3A62A21 /* ImagePanel.cpp */,
+				CBB0FB136EE44BF1A59A02E7 /* Label.cpp */,
+				ED0240A8A10E4A27BA523E8F /* LabelMultiline.cpp */,
+				B8642CDD56194E4E8D0A49CC /* ListBox.cpp */,
+				758DF8F2EAA7409C8D98BB3F /* MenuStrip.cpp */,
+				7D89FD5060F24B079642E121 /* Numeric.cpp */,
+				4BA8F1DBFEF548EDBD756BE9 /* PageControl.cpp */,
+				24577A4802BF45E28509E64F /* ProgressBar.cpp */,
+				3A434AFB24FD48A19A29A6C2 /* Properties.cpp */,
+				5FCA796173764AB18D43F018 /* RadioButton.cpp */,
+				983E5124882E42028C9A1DDB /* ScrollControl.cpp */,
+				10B484FF5E734AAD80DDD599 /* Slider.cpp */,
+				61C7347121AB4D2E80A3AEFB /* StatusBar.cpp */,
+				C7641D8B0ADA4C3CB2BD3D36 /* TabControl.cpp */,
+				AEA4AB2BEED143C6A2246D8F /* TestAPI.cpp */,
+				2BE63F316279487C9CECD5AD /* TextBox.cpp */,
+				258CB0EA692647AB85C9CF3F /* TreeControl.cpp */,
+				B824B834591142BD970A6723 /* Window.cpp */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		FCF44EE050A74B6DB7E61298 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				2CC04DC3ED1B4FE7AC6F7908 /* BaseProperty.h */,
+				DC5C8E7173F44A9B817D1C67 /* Checkbox.h */,
+				BEC8952CB7FD4B1B83AC6252 /* ColorSelector.h */,
+				3600B17F534743D78B397727 /* ComboBox.h */,
+				C0187C7D8F8D46FC94197A74 /* File.h */,
+				C992F53391D942ABB6855A32 /* Folder.h */,
+				35023AC44935409B9E292BAC /* Text.h */,
+			);
+			name = Property;
+			sourceTree = "<group>";
+		};
+		FD0851CF3316485BB7C840DF /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				7FE173016B6648A789A0BDB9 /* SDL2.h */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BB9BCE370F44AB2BAE463B9 /* GworkTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFD186FF9DBE4FFB82468C17 /* Build configuration list for PBXNativeTarget "GworkTest" */;
+			buildPhases = (
+				F3770801615C4C73BCFDC288 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5223FD61CAE841AB853E1218 /* PBXTargetDependency */,
+				BCAD85D0BF2C437380BAA072 /* PBXTargetDependency */,
+				16FE7B1C91D144EA9B2540D5 /* PBXTargetDependency */,
+			);
+			name = GworkTest;
+			productName = GworkTest;
+			productReference = B0BF269E93624F2BB27E2C32 /* libGworkTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5EFC717FF34B4AD59A4D4231 /* GworkSDL2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25372E2C1EF2426E87166A09 /* Build configuration list for PBXNativeTarget "GworkSDL2" */;
+			buildPhases = (
+				74133F8CF2354490870B0815 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0A95C234BB5435EA5C8707F /* PBXTargetDependency */,
+			);
+			name = GworkSDL2;
+			productName = GworkSDL2;
+			productReference = 189B3A5F70CC4F5AA0E6CC01 /* libGworkSDL2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9329059CC57C4E918954E4ED /* GworkSDL2Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3C1D91EEE6240F494CBABFD /* Build configuration list for PBXNativeTarget "GworkSDL2Sample" */;
+			buildPhases = (
+				E53DA32CE39C408D9B6446CB /* Resources */,
+				BE35C424D7054168900F5C79 /* Sources */,
+				B7AA8C3222208BCB0034A094 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A145CB782EFB4767A7BB4E28 /* PBXTargetDependency */,
+				ADF9D095319249ED8DA42380 /* PBXTargetDependency */,
+				0E281A2620E3478FA0B00040 /* PBXTargetDependency */,
+				663CE8FF4B9C491CAD41D714 /* PBXTargetDependency */,
+			);
+			name = GworkSDL2Sample;
+			productName = GworkSDL2Sample;
+			productReference = 35C2358DD4EB4D03BB4F9DE9 /* GworkSDL2Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBE61E9C065F40DEBE634B83 /* Gwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E36F029DCB0541A39DC83911 /* Build configuration list for PBXNativeTarget "Gwork" */;
+			buildPhases = (
+				9B70659615C44E2AA02C6AB3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A2CC898C9264E7AA280DDCD /* PBXTargetDependency */,
+				1FD5711765BE49FEA207D904 /* PBXTargetDependency */,
+			);
+			name = Gwork;
+			productName = Gwork;
+			productReference = AEEED12DF5F848E395DFAD98 /* libGwork.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A566A1188274E31BF0B70ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = C896D0DFFD5D4477B38DFE3D /* Build configuration list for PBXProject "gwork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53BAF251C1F54F1CA25414CD;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				421B4340F73B4475BC707200 /* ALL_BUILD */,
+				FBE61E9C065F40DEBE634B83 /* Gwork */,
+				5EFC717FF34B4AD59A4D4231 /* GworkSDL2 */,
+				9329059CC57C4E918954E4ED /* GworkSDL2Sample */,
+				0BB9BCE370F44AB2BAE463B9 /* GworkTest */,
+				D68034B83BAF410B86D50B21 /* ZERO_CHECK */,
+				C121C0C0E14544A0BD6954AC /* doc */,
+				DCE1FDA104FD4BAAB76AA7D5 /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E53DA32CE39C408D9B6446CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E029F02C92B4B94B140C299 /* DefaultSkin.png in Resources */,
+				0E063EC867E14B8483ED306B /* OpenSans.ttf in Resources */,
+				2D1983DC174A4CB5B1F5FE48 /* logo.png in Resources */,
+				1B26F76E78074B67B08873F4 /* test16.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53537388044445119A7C3673 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pavlogryb/Downloads/gwork -f /Users/pavlogryb/Downloads/gwork/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all\n";
+			showEnvVarsInLog = 0;
+		};
+		63813D93E2DB4F0C9DDB67D1 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pavlogryb/Downloads/gwork -f /Users/pavlogryb/Downloads/gwork/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		AE43A9533B734309BEE2048C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pavlogryb/Downloads/gwork/docs -f /Users/pavlogryb/Downloads/gwork/docs/CMakeScripts/doc_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E6AE780C0B9A4434ADDD25FF /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pavlogryb/Downloads/gwork -f /Users/pavlogryb/Downloads/gwork/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74133F8CF2354490870B0815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5E685F8E99B43EE9B48F576 /* CrossPlatform.cpp in Sources */,
+				58287BEA82E44A59AE307044 /* PlatformCommon.cpp in Sources */,
+				6677D3186D184062BD1117ED /* Utility.cpp in Sources */,
+				8F03C51D74A64B2892CFE9BB /* SDL2.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B70659615C44E2AA02C6AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4B99BE8F3134E2BA329B3EE /* Anim.cpp in Sources */,
+				20FADE90BAE54DB39F87147B /* BaseRender.cpp in Sources */,
+				9BD3E4E4BCA2474B866E2927 /* ControlList.cpp in Sources */,
+				94DDCC10C7A24346B27E7968 /* Base.cpp in Sources */,
+				ECA483CB6207429493D80723 /* Button.cpp in Sources */,
+				C8328592E4DF4A9DB9FDB99A /* Canvas.cpp in Sources */,
+				A14A56349F0A41C1A04D7CF0 /* CheckBox.cpp in Sources */,
+				A47349C363F044E085A51237 /* CollapsibleCategory.cpp in Sources */,
+				471795EF09FD4A39AFB73936 /* ColorControls.cpp in Sources */,
+				9B59A48609CC41A88F27D5EC /* ColorPicker.cpp in Sources */,
+				201D5E070FA3465DB4199659 /* ComboBox.cpp in Sources */,
+				17F93033EF4D447F9DD6D372 /* CrossSplitter.cpp in Sources */,
+				1132BEB8F90B47A7AF3D5EE7 /* FileOpen.cpp in Sources */,
+				5C7438CDDACD45D29887919F /* FileSave.cpp in Sources */,
+				0980EE860F254EFC85C82D41 /* FolderOpen.cpp in Sources */,
+				E7F5F6D1FFFE4C38B36F184F /* Query.cpp in Sources */,
+				084C8F263BD84639B6AE5682 /* DockBase.cpp in Sources */,
+				D76469F23313466D8C75C91E /* DockedTabControl.cpp in Sources */,
+				FF437DC3406C41F3B3270825 /* Dragger.cpp in Sources */,
+				EA2B7B308F2C4ACF88790824 /* GroupBox.cpp in Sources */,
+				846CFC206D3247D1A798B464 /* HSVColorPicker.cpp in Sources */,
+				838BDBBC676642B98975846F /* HorizontalScrollBar.cpp in Sources */,
+				C1F241A9F34A4F80A948EB2F /* HorizontalSlider.cpp in Sources */,
+				3865A91994924CB5AD6B3C20 /* ImagePanel.cpp in Sources */,
+				37F1F088E5714F099466F196 /* Label.cpp in Sources */,
+				E96010548EBD44A598C49C47 /* LabelClickable.cpp in Sources */,
+				097B4125165E4D779588BCA4 /* ListBox.cpp in Sources */,
+				150639837825429F86D1A707 /* Menu.cpp in Sources */,
+				E799A43885CE44E39BA8CEE4 /* MenuItem.cpp in Sources */,
+				9096138C7F8E4C98BCE456F7 /* MenuStrip.cpp in Sources */,
+				3BE9251668C04252A04D63CB /* NumericUpDown.cpp in Sources */,
+				B2C86A24A44448F8990ED8BF /* PageControl.cpp in Sources */,
+				9B9F675516574A7E885F0C31 /* ProgressBar.cpp in Sources */,
+				2E38E6797E1B49AD93922677 /* Properties.cpp in Sources */,
+				379A069E3B3247B7891AB0CB /* PropertyTree.cpp in Sources */,
+				636A18E6F1324E269DCFAF2D /* RadioButton.cpp in Sources */,
+				39BAD6B08D78473CA0895246 /* RadioButtonController.cpp in Sources */,
+				1D200DE600D74AF89323537F /* Rectangle.cpp in Sources */,
+				2926115CD4554BC6B0C3B28B /* ResizableControl.cpp in Sources */,
+				B0106CD3BE4A438BA00867D2 /* Resizer.cpp in Sources */,
+				E7670A8C5CDF4125917CB71B /* RichLabel.cpp in Sources */,
+				56B16D6C4E394EB697B874CC /* ScrollBar.cpp in Sources */,
+				590D80524FC04061BC84DA7D /* ScrollBarBar.cpp in Sources */,
+				AB7EFA11C6C44949B5EA7F15 /* ScrollBarButton.cpp in Sources */,
+				4418D155631C4487A8F1EFF6 /* ScrollControl.cpp in Sources */,
+				31611FE3E04D4BC5B696342E /* Slider.cpp in Sources */,
+				4172868D68DC4F6DB38ACFF3 /* SplitterBar.cpp in Sources */,
+				9334246BCEE3430E9DC0FD42 /* TabButton.cpp in Sources */,
+				1628BACFFE3A45F597363DA1 /* TabControl.cpp in Sources */,
+				F05ED272DB0A478A90DFAB2F /* TabStrip.cpp in Sources */,
+				C1739B5AA72E440EAF05874A /* Text.cpp in Sources */,
+				9826DC3FF1D84CB7BCC63DFC /* TextBox.cpp in Sources */,
+				C2B5F716D6864EB4AF2FB7C9 /* TextBoxNumeric.cpp in Sources */,
+				5804EE378B634502ACD1F163 /* TreeControl.cpp in Sources */,
+				D47BECFBFC7A4775BADA6EC9 /* TreeNode.cpp in Sources */,
+				2B2FE7137FF9426588468482 /* VerticalScrollBar.cpp in Sources */,
+				FCB120ED8EB74D8A9025BC1E /* VerticalSlider.cpp in Sources */,
+				2066FA1C7681420AB385A79D /* WindowCanvas.cpp in Sources */,
+				4A15D68548E94ED89F9D951B /* WindowControl.cpp in Sources */,
+				E7925E32D77740758D1DB510 /* DragAndDrop.cpp in Sources */,
+				B279B85103D044AA9C0B6496 /* Events.cpp in Sources */,
+				56716027D7FC4380A1957199 /* Gwork.cpp in Sources */,
+				BD9206DB8CDF4A55AE9AE5D3 /* Hook.cpp in Sources */,
+				BDC7E286E22849C9975AF5B4 /* InputHandler.cpp in Sources */,
+				DC3E86FF38954EB586ACA6D5 /* Skin.cpp in Sources */,
+				759435B1AD2C4EEA9CC61F4B /* ToolTip.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE35C424D7054168900F5C79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3551258B41647F79D80072F /* SDL2Sample.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3770801615C4C73BCFDC288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E512787D69C745A08D115CBC /* Test.cpp in Sources */,
+				244BE5AB6A954BBFB912AFBA /* Button.cpp in Sources */,
+				E95005F185E642D180CEC7AE /* Checkbox.cpp in Sources */,
+				BB26B1382AB24471ADEF6CBE /* CollapsibleList.cpp in Sources */,
+				056AC4B23C914E9FB0C5CD0F /* ColorPicker.cpp in Sources */,
+				65920EA993D24ECFA368BA32 /* ComboBox.cpp in Sources */,
+				395D72D224054EBF9688FF05 /* CrossSplitter.cpp in Sources */,
+				BAAC33303CE64ACB8CA9E090 /* GroupBox.cpp in Sources */,
+				B7DEF1E4883744E190F91C47 /* ImagePanel.cpp in Sources */,
+				0C36C4A00C6F4F7D9EEFC4F3 /* Label.cpp in Sources */,
+				9A1210B997714D938D39B36D /* LabelMultiline.cpp in Sources */,
+				479AAF743B0C49288DEBDC36 /* ListBox.cpp in Sources */,
+				F2A99C606078438A899A7245 /* MenuStrip.cpp in Sources */,
+				D72F4DD33D28434DAC1ED777 /* Numeric.cpp in Sources */,
+				20C8D3F2AC564DDFADC3C068 /* PageControl.cpp in Sources */,
+				82FC5E0ED86B44DB9A22FA20 /* ProgressBar.cpp in Sources */,
+				00399774CD494EBB8790F6CE /* Properties.cpp in Sources */,
+				2597BF4E57D24F6A9EAF3E6F /* RadioButton.cpp in Sources */,
+				F64408E045B34DAABA28D258 /* ScrollControl.cpp in Sources */,
+				CC571AB6CB294FB394984EC9 /* Slider.cpp in Sources */,
+				7087E25435F142E8B263BE22 /* StatusBar.cpp in Sources */,
+				F8EE3340F86B40FB9AD2CBE2 /* TabControl.cpp in Sources */,
+				F72560462D084B08B9B82311 /* TestAPI.cpp in Sources */,
+				6CE52DE40ABE4542BEEBB523 /* TextBox.cpp in Sources */,
+				28C91CFE6E044C73A8BCA599 /* TreeControl.cpp in Sources */,
+				109BC049563542E8985B0C55 /* Window.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E281A2620E3478FA0B00040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBE61E9C065F40DEBE634B83 /* Gwork */;
+			targetProxy = 206400EB6CC84653B852A372 /* PBXContainerItemProxy */;
+		};
+		16FE7B1C91D144EA9B2540D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBE61E9C065F40DEBE634B83 /* Gwork */;
+			targetProxy = 06430BAA840143B1B01F8C2A /* PBXContainerItemProxy */;
+		};
+		1FD5711765BE49FEA207D904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EFC717FF34B4AD59A4D4231 /* GworkSDL2 */;
+			targetProxy = 05C69AB259184C0BBDD4366B /* PBXContainerItemProxy */;
+		};
+		1FF7148A3FEC45E78444405A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D68034B83BAF410B86D50B21 /* ZERO_CHECK */;
+			targetProxy = 9F3C028120374228A1DE7D94 /* PBXContainerItemProxy */;
+		};
+		240EFAD559BB48C3A899ACC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D68034B83BAF410B86D50B21 /* ZERO_CHECK */;
+			targetProxy = B637E938D8234A828683FABA /* PBXContainerItemProxy */;
+		};
+		24EBAC9E68C447F78EC5FADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9329059CC57C4E918954E4ED /* GworkSDL2Sample */;
+			targetProxy = 33BE62B735934E3A9E2BDFF7 /* PBXContainerItemProxy */;
+		};
+		47CA37CD94884D37A100CC1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BB9BCE370F44AB2BAE463B9 /* GworkTest */;
+			targetProxy = 2FF39332A353454D92356529 /* PBXContainerItemProxy */;
+		};
+		4A2CC898C9264E7AA280DDCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D68034B83BAF410B86D50B21 /* ZERO_CHECK */;
+			targetProxy = 141AA8513F1E4EC891BC80D7 /* PBXContainerItemProxy */;
+		};
+		4CF4F8CCA0AF4A2BA17CEE5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EFC717FF34B4AD59A4D4231 /* GworkSDL2 */;
+			targetProxy = 12F0907235BB48579321E322 /* PBXContainerItemProxy */;
+		};
+		5223FD61CAE841AB853E1218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D68034B83BAF410B86D50B21 /* ZERO_CHECK */;
+			targetProxy = 831F8CBC9C8245C6BFC10130 /* PBXContainerItemProxy */;
+		};
+		5BC634AEF68C4406AD9A1C45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 421B4340F73B4475BC707200 /* ALL_BUILD */;
+			targetProxy = 614EA4C6E5F34545821518E7 /* PBXContainerItemProxy */;
+		};
+		663CE8FF4B9C491CAD41D714 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BB9BCE370F44AB2BAE463B9 /* GworkTest */;
+			targetProxy = 27CF825230784681AB317A86 /* PBXContainerItemProxy */;
+		};
+		A145CB782EFB4767A7BB4E28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D68034B83BAF410B86D50B21 /* ZERO_CHECK */;
+			targetProxy = 3BCEDDA2568C48538F35DCAD /* PBXContainerItemProxy */;
+		};
+		ADF9D095319249ED8DA42380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EFC717FF34B4AD59A4D4231 /* GworkSDL2 */;
+			targetProxy = 830EF0E3730C4A23A049F611 /* PBXContainerItemProxy */;
+		};
+		BCAD85D0BF2C437380BAA072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EFC717FF34B4AD59A4D4231 /* GworkSDL2 */;
+			targetProxy = 3FEBCE0F98014D529BE28ECC /* PBXContainerItemProxy */;
+		};
+		CC1AC8612AFB42B4ACAA96F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBE61E9C065F40DEBE634B83 /* Gwork */;
+			targetProxy = 40AFB346024746399DC9E0BB /* PBXContainerItemProxy */;
+		};
+		D0A95C234BB5435EA5C8707F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D68034B83BAF410B86D50B21 /* ZERO_CHECK */;
+			targetProxy = 0E246244E1F4411287984A54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		086332A49E53456895C8CA80 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					/usr/local/include/SDL2,
+					/Users/pavlogryb/Downloads/gwork/source/test/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkTest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/test;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		0BC0A8C57F904BC681FF1BCB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GWORK_RESOURCE_DIR=\"../Resources/\"'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					"/usr/local/include/SDL2/**",
+					/Users/pavlogryb/Downloads/gwork/source/test/include,
+					"/Users/pavlogryb/Dropbox//Projects/Robot/Robot/thirdParty/glm",
+				);
+				INFOPLIST_FILE = /Users/pavlogryb/Downloads/gwork/source/samples/CMakeFiles/GworkSDL2Sample.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/pavlogryb/Downloads/gwork/lib/MinSizeRel/libGwork.a,
+					/Users/pavlogryb/Downloads/gwork/lib/MinSizeRel/libGworkSDL2.a,
+					/usr/local/lib/libSDL2main.a,
+					/usr/local/lib/libSDL2.dylib,
+					"-framework",
+					Cocoa,
+					/usr/local/lib/libSDL2_image.dylib,
+					/usr/local/lib/libSDL2_ttf.dylib,
+					/Users/pavlogryb/Downloads/gwork/lib/MinSizeRel/libGworkTest.a,
+					/Users/pavlogryb/Downloads/gwork/lib/MinSizeRel/libGwork.a,
+					/Users/pavlogryb/Downloads/gwork/lib/MinSizeRel/libGworkSDL2.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkSDL2Sample;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/samples;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		0F2AABE45FBD4F41A20F561F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					/usr/local/include/SDL2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Gwork;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		0F8355F8171E43319E7C54D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		0FB1DB7B7B1A4EAC9C9D5917 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					/usr/local/include/SDL2,
+					/Users/pavlogryb/Downloads/gwork/source/test/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkTest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/test;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		13C11CC247964DAD81FCFE3E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		27D9051981654F6D89C4B00A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		2C4DDB423A5D4EC29F33B021 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/build;
+			};
+			name = RelWithDebInfo;
+		};
+		2D5962BD663242E5AC9917C8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2F176F46BE50434EB9BBB2F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GWORK_RESOURCE_DIR=\"../Resources/\"'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					"/usr/local/include/SDL2/**",
+					/Users/pavlogryb/Downloads/gwork/source/test/include,
+					"/Users/pavlogryb/Dropbox//Projects/Robot/Robot/thirdParty/glm",
+				);
+				INFOPLIST_FILE = /Users/pavlogryb/Downloads/gwork/source/samples/CMakeFiles/GworkSDL2Sample.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/pavlogryb/Downloads/gwork/lib/Release/libGwork.a,
+					/Users/pavlogryb/Downloads/gwork/lib/Release/libGworkSDL2.a,
+					/usr/local/lib/libSDL2main.a,
+					/usr/local/lib/libSDL2.dylib,
+					"-framework",
+					Cocoa,
+					/usr/local/lib/libSDL2_image.dylib,
+					/usr/local/lib/libSDL2_ttf.dylib,
+					/Users/pavlogryb/Downloads/gwork/lib/Release/libGworkTest.a,
+					/Users/pavlogryb/Downloads/gwork/lib/Release/libGwork.a,
+					/Users/pavlogryb/Downloads/gwork/lib/Release/libGworkSDL2.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkSDL2Sample;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/samples;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		36A65D9961E3421E9765ED8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					/usr/local/include/SDL2,
+					/Users/pavlogryb/Downloads/gwork/source/test/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkTest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/test;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		3CFDD09DFD954E6DA7D4A78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GWORK_RESOURCE_DIR=\"../Resources/\"'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					"/usr/local/include/SDL2/**",
+					/Users/pavlogryb/Downloads/gwork/source/test/include,
+					"/Users/pavlogryb/Dropbox//Projects/Robot/Robot/thirdParty/glm",
+				);
+				INFOPLIST_FILE = /Users/pavlogryb/Downloads/gwork/source/samples/CMakeFiles/GworkSDL2Sample.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11'  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/pavlogryb/Downloads/gwork/lib/Debug/libGwork.a,
+					/Users/pavlogryb/Downloads/gwork/lib/Debug/libGworkSDL2.a,
+					/usr/local/lib/libSDL2main.a,
+					/usr/local/lib/libSDL2.dylib,
+					"-framework",
+					Cocoa,
+					/usr/local/lib/libSDL2_image.dylib,
+					/usr/local/lib/libSDL2_ttf.dylib,
+					/Users/pavlogryb/Downloads/gwork/lib/Debug/libGworkTest.a,
+					/Users/pavlogryb/Downloads/gwork/lib/Debug/libGwork.a,
+					/Users/pavlogryb/Downloads/gwork/lib/Debug/libGworkSDL2.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkSDL2Sample;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/samples;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		4746FC5D6BE04946B2E18053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GWK_PLATFORM_Cross=1 -DGWK_RENDER_SDL2=1'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/usr/local/include/SDL2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkSDL2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/platform;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		5C300B50B5714D92B617CD12 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GWK_PLATFORM_Cross=1 -DGWK_RENDER_SDL2=1'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/usr/local/include/SDL2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkSDL2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/platform;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6276B6A490A6419B8260C4F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/build;
+			};
+			name = Debug;
+		};
+		629FA92E87BD48ECB4BAA280 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					/usr/local/include/SDL2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Gwork;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		6A6C198D6EAB49558D1A18B2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6ACF62FCC81743E886A0F8D4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		7CC0306A3B114872A02C6438 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GWK_PLATFORM_Cross=1 -DGWK_RENDER_SDL2=1'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/usr/local/include/SDL2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkSDL2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/platform;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		952D34C456754B7489B3912D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		9D009B3A11FC4CCDB1153E94 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		A508B902C5AF46AB90408CC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		BFAEEF84B264471AA35ED620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		C2AA3A851721470E86C72D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		C6AB7FDADE3A4B9C9A5F8424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GWK_PLATFORM_Cross=1 -DGWK_RENDER_SDL2=1'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/usr/local/include/SDL2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkSDL2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/platform;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		CB9D6F901F8B4AEFA0BF71F0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					/usr/local/include/SDL2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Gwork;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		CC390335A1614BD09354E017 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		CD6D84717CD84FC290BF1FBA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/build;
+			};
+			name = MinSizeRel;
+		};
+		DA9D9C5CC9464409834C8208 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					/usr/local/include/SDL2,
+					/Users/pavlogryb/Downloads/gwork/source/test/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkTest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/test;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		E75CC34E42FE47B9B25D31C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = doc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/docs;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		E79D607ED2E1485BAB1B9FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		ECF74CDDB7BF4BD9865C0C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					/usr/local/include/SDL2,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Gwork;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		EE49510EA32E43FD84240BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		F272B9EE7DD5427584009B6E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		FC1A82022BF44051A736892B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/build;
+			};
+			name = Release;
+		};
+		FE07B4AD1E27412682297009 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pavlogryb/Downloads/gwork/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GWORK_RESOURCE_DIR=\"../Resources/\"'",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pavlogryb/Downloads/gwork/source/platform/include,
+					/Users/pavlogryb/Downloads/gwork/source/gwork/include,
+					"/usr/local/include/SDL2/**",
+					/Users/pavlogryb/Downloads/gwork/source/test/include,
+					"/Users/pavlogryb/Dropbox//Projects/Robot/Robot/thirdParty/glm",
+				);
+				INFOPLIST_FILE = /Users/pavlogryb/Downloads/gwork/source/samples/CMakeFiles/GworkSDL2Sample.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/pavlogryb/Downloads/gwork/lib/RelWithDebInfo/libGwork.a,
+					/Users/pavlogryb/Downloads/gwork/lib/RelWithDebInfo/libGworkSDL2.a,
+					/usr/local/lib/libSDL2main.a,
+					/usr/local/lib/libSDL2.dylib,
+					"-framework",
+					Cocoa,
+					/usr/local/lib/libSDL2_image.dylib,
+					/usr/local/lib/libSDL2_ttf.dylib,
+					/Users/pavlogryb/Downloads/gwork/lib/RelWithDebInfo/libGworkTest.a,
+					/Users/pavlogryb/Downloads/gwork/lib/RelWithDebInfo/libGwork.a,
+					/Users/pavlogryb/Downloads/gwork/lib/RelWithDebInfo/libGworkSDL2.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GworkSDL2Sample;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pavlogryb/Downloads/gwork/source/samples;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		066CDB83AB674A27ADA776F1 /* Build configuration list for PBXAggregateTarget "doc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFAEEF84B264471AA35ED620 /* Debug */,
+				E75CC34E42FE47B9B25D31C4 /* Release */,
+				6ACF62FCC81743E886A0F8D4 /* MinSizeRel */,
+				CC390335A1614BD09354E017 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		07C3A43461BC4B6783AB9C07 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79D607ED2E1485BAB1B9FEE /* Debug */,
+				A508B902C5AF46AB90408CC6 /* Release */,
+				9D009B3A11FC4CCDB1153E94 /* MinSizeRel */,
+				6A6C198D6EAB49558D1A18B2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		25372E2C1EF2426E87166A09 /* Build configuration list for PBXNativeTarget "GworkSDL2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4746FC5D6BE04946B2E18053 /* Debug */,
+				C6AB7FDADE3A4B9C9A5F8424 /* Release */,
+				7CC0306A3B114872A02C6438 /* MinSizeRel */,
+				5C300B50B5714D92B617CD12 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		254F76ED8844441C8C134215 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F8355F8171E43319E7C54D6 /* Debug */,
+				952D34C456754B7489B3912D /* Release */,
+				2D5962BD663242E5AC9917C8 /* MinSizeRel */,
+				13C11CC247964DAD81FCFE3E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4B79D261AA494431B42476AB /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE49510EA32E43FD84240BF9 /* Debug */,
+				C2AA3A851721470E86C72D79 /* Release */,
+				F272B9EE7DD5427584009B6E /* MinSizeRel */,
+				27D9051981654F6D89C4B00A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3C1D91EEE6240F494CBABFD /* Build configuration list for PBXNativeTarget "GworkSDL2Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CFDD09DFD954E6DA7D4A78E /* Debug */,
+				2F176F46BE50434EB9BBB2F4 /* Release */,
+				0BC0A8C57F904BC681FF1BCB /* MinSizeRel */,
+				FE07B4AD1E27412682297009 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFD186FF9DBE4FFB82468C17 /* Build configuration list for PBXNativeTarget "GworkTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9D9C5CC9464409834C8208 /* Debug */,
+				36A65D9961E3421E9765ED8C /* Release */,
+				0FB1DB7B7B1A4EAC9C9D5917 /* MinSizeRel */,
+				086332A49E53456895C8CA80 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C896D0DFFD5D4477B38DFE3D /* Build configuration list for PBXProject "gwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6276B6A490A6419B8260C4F6 /* Debug */,
+				FC1A82022BF44051A736892B /* Release */,
+				CD6D84717CD84FC290BF1FBA /* MinSizeRel */,
+				2C4DDB423A5D4EC29F33B021 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E36F029DCB0541A39DC83911 /* Build configuration list for PBXNativeTarget "Gwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF74CDDB7BF4BD9865C0C69 /* Debug */,
+				0F2AABE45FBD4F41A20F561F /* Release */,
+				629FA92E87BD48ECB4BAA280 /* MinSizeRel */,
+				CB9D6F901F8B4AEFA0BF71F0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A566A1188274E31BF0B70ED /* Project object */;
+}

@@ -171,8 +171,8 @@ bool SDL2::EnsureTexture(const Gwk::Texture& texture)
 SDL2::SDL2(ResourcePaths& paths, SDL_Window *window)
     :   Base(paths)
     ,   m_window(window)
-    ,   m_renderer(nullptr)
     ,   m_lastFont(nullptr)
+    ,   m_renderer(nullptr)
     ,   m_lastTexture(nullptr)
 {
   m_renderer = SDL_GetRenderer( m_window );

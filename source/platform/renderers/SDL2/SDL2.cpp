@@ -80,6 +80,9 @@ Texture::Status SDL2::LoadTexture(const Texture& texture)
         // You cannot find the format of a texture once loaded to read from it
         // in SDL2 so we have to keep the surface to read from.
         SDL_Surface *surf = IMG_Load(filename.c_str());
+        //SDL_DisplayFormat(surf);
+        SDL_SetSurfaceBlendMode(surf, SDL_BLENDMODE_BLEND);
+        SDL_SetColorKey(surf, 1, SDL_MapRGB(surf->format, 0, 0, 0));
 
         if (!surf)
         {
